@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64B468821828E12986961B2B /* Pods_StepCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DDD25A98E758274E262797 /* Pods_StepCity.framework */; };
 		D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28DEF9F25573CA900B4A524 /* StepCityApp.swift */; };
 		D28DEFA225573CA900B4A524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28DEFA125573CA900B4A524 /* ContentView.swift */; };
 		D28DEFA425573CAA00B4A524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFA325573CAA00B4A524 /* Assets.xcassets */; };
 		D28DEFA725573CAA00B4A524 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFA625573CAA00B4A524 /* Preview Assets.xcassets */; };
 		D28DEFBC2557400A00B4A524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFBB2557400A00B4A524 /* Main.storyboard */; };
+		D2A38AD7255756E1007B5A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38AD6255756E1007B5A88 /* AppDelegate.swift */; };
+		D2C377E3255740E70005B408 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2C377E2255740E70005B408 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C230EBB5ECF66A64DF10397 /* Pods-StepCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.release.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.release.xcconfig"; sourceTree = "<group>"; };
+		A2DDD25A98E758274E262797 /* Pods_StepCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70ADB43821AEA536D6C669D /* Pods-StepCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.debug.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.debug.xcconfig"; sourceTree = "<group>"; };
 		D28DEF9C25573CA900B4A524 /* StepCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28DEF9F25573CA900B4A524 /* StepCityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCityApp.swift; sourceTree = "<group>"; };
 		D28DEFA125573CA900B4A524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		D28DEFA625573CAA00B4A524 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D28DEFA825573CAA00B4A524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D28DEFBB2557400A00B4A524 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D2A38AD6255756E1007B5A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2C377E2255740E70005B408 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B468821828E12986961B2B /* Pods_StepCity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C77CC4404CD4E5080E2059C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B70ADB43821AEA536D6C669D /* Pods-StepCity.debug.xcconfig */,
+				5C230EBB5ECF66A64DF10397 /* Pods-StepCity.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D28DEF9325573CA900B4A524 = {
 			isa = PBXGroup;
 			children = (
 				D28DEF9E25573CA900B4A524 /* StepCity */,
 				D28DEF9D25573CA900B4A524 /* Products */,
+				C77CC4404CD4E5080E2059C0 /* Pods */,
+				FCCA22573060BE13DE54E1DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +77,10 @@
 				D28DEFBB2557400A00B4A524 /* Main.storyboard */,
 				D28DEF9F25573CA900B4A524 /* StepCityApp.swift */,
 				D28DEFA125573CA900B4A524 /* ContentView.swift */,
+				D2A38AD6255756E1007B5A88 /* AppDelegate.swift */,
 				D28DEFA325573CAA00B4A524 /* Assets.xcassets */,
 				D28DEFA825573CAA00B4A524 /* Info.plist */,
+				D2C377E2255740E70005B408 /* GoogleService-Info.plist */,
 				D28DEFA525573CAA00B4A524 /* Preview Content */,
 			);
 			path = StepCity;
@@ -72,6 +94,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FCCA22573060BE13DE54E1DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2DDD25A98E758274E262797 /* Pods_StepCity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D28DEFAB25573CAA00B4A524 /* Build configuration list for PBXNativeTarget "StepCity" */;
 			buildPhases = (
+				3E4808E076E9694583BE754A /* [CP] Check Pods Manifest.lock */,
 				D28DEF9825573CA900B4A524 /* Sources */,
 				D28DEF9925573CA900B4A524 /* Frameworks */,
 				D28DEF9A25573CA900B4A524 /* Resources */,
+				72346D02CDFC4F5483D393AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28DEFA725573CAA00B4A524 /* Preview Assets.xcassets in Resources */,
+				D2C377E3255740E70005B408 /* GoogleService-Info.plist in Resources */,
 				D28DEFBC2557400A00B4A524 /* Main.storyboard in Resources */,
 				D28DEFA425573CAA00B4A524 /* Assets.xcassets in Resources */,
 			);
@@ -137,11 +170,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E4808E076E9694583BE754A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StepCity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72346D02CDFC4F5483D393AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCity/Pods-StepCity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StepCity/Pods-StepCity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StepCity/Pods-StepCity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D28DEF9825573CA900B4A524 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A38AD7255756E1007B5A88 /* AppDelegate.swift in Sources */,
 				D28DEFA225573CA900B4A524 /* ContentView.swift in Sources */,
 				D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */,
 			);
@@ -268,6 +344,7 @@
 		};
 		D28DEFAC25573CAA00B4A524 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B70ADB43821AEA536D6C669D /* Pods-StepCity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +367,7 @@
 		};
 		D28DEFAD25573CAA00B4A524 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C230EBB5ECF66A64DF10397 /* Pods-StepCity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
