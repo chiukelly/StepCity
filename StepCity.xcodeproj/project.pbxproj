@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64B468821828E12986961B2B /* Pods_StepCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DDD25A98E758274E262797 /* Pods_StepCity.framework */; };
+		931DE205A4E705E206951470 /* Pods_StepCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */; };
 		D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28DEF9F25573CA900B4A524 /* StepCityApp.swift */; };
 		D28DEFA225573CA900B4A524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28DEFA125573CA900B4A524 /* ContentView.swift */; };
 		D28DEFA425573CAA00B4A524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFA325573CAA00B4A524 /* Assets.xcassets */; };
 		D28DEFA725573CAA00B4A524 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFA625573CAA00B4A524 /* Preview Assets.xcassets */; };
 		D28DEFBC2557400A00B4A524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFBB2557400A00B4A524 /* Main.storyboard */; };
 		D2A38AD7255756E1007B5A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38AD6255756E1007B5A88 /* AppDelegate.swift */; };
+		D2A38ADB2557598C007B5A88 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38ADA2557598C007B5A88 /* Leaderboard.swift */; };
+		D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */; };
 		D2C377E3255740E70005B408 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2C377E2255740E70005B408 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C230EBB5ECF66A64DF10397 /* Pods-StepCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.release.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.release.xcconfig"; sourceTree = "<group>"; };
-		A2DDD25A98E758274E262797 /* Pods_StepCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B70ADB43821AEA536D6C669D /* Pods-StepCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.debug.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.debug.xcconfig"; sourceTree = "<group>"; };
+		0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74908C8AD800D098E7F49547 /* Pods-StepCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.debug.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.debug.xcconfig"; sourceTree = "<group>"; };
+		98B479DD870951DC9CF2A909 /* Pods-StepCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.release.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.release.xcconfig"; sourceTree = "<group>"; };
 		D28DEF9C25573CA900B4A524 /* StepCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28DEF9F25573CA900B4A524 /* StepCityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCityApp.swift; sourceTree = "<group>"; };
 		D28DEFA125573CA900B4A524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		D28DEFA825573CAA00B4A524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D28DEFBB2557400A00B4A524 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D2A38AD6255756E1007B5A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2A38ADA2557598C007B5A88 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
 		D2C377E2255740E70005B408 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,18 +41,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B468821828E12986961B2B /* Pods_StepCity.framework in Frameworks */,
+				931DE205A4E705E206951470 /* Pods_StepCity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32C9A515C3110AB04FFEDBB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C77CC4404CD4E5080E2059C0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B70ADB43821AEA536D6C669D /* Pods-StepCity.debug.xcconfig */,
-				5C230EBB5ECF66A64DF10397 /* Pods-StepCity.release.xcconfig */,
+				74908C8AD800D098E7F49547 /* Pods-StepCity.debug.xcconfig */,
+				98B479DD870951DC9CF2A909 /* Pods-StepCity.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -59,7 +71,7 @@
 				D28DEF9E25573CA900B4A524 /* StepCity */,
 				D28DEF9D25573CA900B4A524 /* Products */,
 				C77CC4404CD4E5080E2059C0 /* Pods */,
-				FCCA22573060BE13DE54E1DC /* Frameworks */,
+				32C9A515C3110AB04FFEDBB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +86,7 @@
 		D28DEF9E25573CA900B4A524 /* StepCity */ = {
 			isa = PBXGroup;
 			children = (
+				D2A38AD925575975007B5A88 /* FriendsPage */,
 				D28DEFBB2557400A00B4A524 /* Main.storyboard */,
 				D28DEF9F25573CA900B4A524 /* StepCityApp.swift */,
 				D28DEFA125573CA900B4A524 /* ContentView.swift */,
@@ -94,12 +107,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FCCA22573060BE13DE54E1DC /* Frameworks */ = {
+		D2A38AD925575975007B5A88 /* FriendsPage */ = {
 			isa = PBXGroup;
 			children = (
-				A2DDD25A98E758274E262797 /* Pods_StepCity.framework */,
+				D2A38ADA2557598C007B5A88 /* Leaderboard.swift */,
+				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
 			);
-			name = Frameworks;
+			path = FriendsPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,11 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D28DEFAB25573CAA00B4A524 /* Build configuration list for PBXNativeTarget "StepCity" */;
 			buildPhases = (
-				3E4808E076E9694583BE754A /* [CP] Check Pods Manifest.lock */,
+				8225A27BD6E9354A0CA55B1D /* [CP] Check Pods Manifest.lock */,
 				D28DEF9825573CA900B4A524 /* Sources */,
 				D28DEF9925573CA900B4A524 /* Frameworks */,
 				D28DEF9A25573CA900B4A524 /* Resources */,
-				72346D02CDFC4F5483D393AD /* [CP] Embed Pods Frameworks */,
+				E82F4ECACD46D089484FB751 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,7 +185,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3E4808E076E9694583BE754A /* [CP] Check Pods Manifest.lock */ = {
+		8225A27BD6E9354A0CA55B1D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,7 +207,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		72346D02CDFC4F5483D393AD /* [CP] Embed Pods Frameworks */ = {
+		E82F4ECACD46D089484FB751 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,6 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A38AD7255756E1007B5A88 /* AppDelegate.swift in Sources */,
+				D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */,
+				D2A38ADB2557598C007B5A88 /* Leaderboard.swift in Sources */,
 				D28DEFA225573CA900B4A524 /* ContentView.swift in Sources */,
 				D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */,
 			);
@@ -344,7 +360,7 @@
 		};
 		D28DEFAC25573CAA00B4A524 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B70ADB43821AEA536D6C669D /* Pods-StepCity.debug.xcconfig */;
+			baseConfigurationReference = 74908C8AD800D098E7F49547 /* Pods-StepCity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -367,7 +383,7 @@
 		};
 		D28DEFAD25573CAA00B4A524 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C230EBB5ECF66A64DF10397 /* Pods-StepCity.release.xcconfig */;
+			baseConfigurationReference = 98B479DD870951DC9CF2A909 /* Pods-StepCity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
