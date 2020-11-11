@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct BottomNavigationBar: View {
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.clear
+    }
+
     var body: some View {
-        Image("setting")
+        TabView() {
+            Text("My City Page Placeholder")
+                .multilineTextAlignment(.leading)
+                .tabItem {
+                    Image("mycity_logo")
+                }
+            Text("Build Page Placeholder")
+                .tabItem {
+                    Image("build_logo")
+                }
+            Text("Friends Page Placeholder")
+                .tabItem {
+                    Image("friends_logo")
+                }
+            Text("Settings Page Placeholder")
+                .tabItem {
+                    Image("setting_logo")
+                }
+        }
     }
 }
 
