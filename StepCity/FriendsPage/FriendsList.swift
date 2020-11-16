@@ -94,4 +94,3 @@ struct FriendsList_Previews: PreviewProvider {
         FriendsList()
     }
 }
-
