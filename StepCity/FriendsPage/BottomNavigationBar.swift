@@ -14,20 +14,20 @@ struct BottomNavigationBar: View {
 
     var body: some View {
         TabView() {
-            Text("My City Page Placeholder")
+            Text("")
                 .multilineTextAlignment(.leading)
                 .tabItem {
                     Image("mycity_logo")
                 }
-            Text("Build Page Placeholder")
+            Text("asdf")
                 .tabItem {
                     Image("build_logo")
                 }
-            Text("Friends Page Placeholder")
+            Text("sadf")
                 .tabItem {
                     Image("friends_logo")
                 }
-            Text("Settings Page Placeholder")
+            Text("safd")
                 .tabItem {
                     Image("setting_logo")
                 }

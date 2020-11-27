@@ -1,27 +1,20 @@
 //
-//  FriendsList.swift
+//  playground.swift
 //  StepCity
 //
-//  Created by Emmanuel Ihim on 11/11/20.
+//  Created by Emmanuel Ihim on 11/26/20.
 //
 
 import SwiftUI
 
-struct FriendsList: View {
+struct playground: View {
     var body: some View {
         let numbers = [1, 2, 3, 4, 5, 6, 7]
         
-        ZStack {
-            NavigationView {
-                Text("")
-            }
-            
-            Button(action: {}) {
-                
-            }
-            
+        NavigationView {
             GeometryReader { gr in
                 VStack(spacing: 20.0) {
+                    
                     buttons()
                         .frame(height: gr.size.height * 0.12)
                         
@@ -34,7 +27,12 @@ struct FriendsList: View {
                     }
                 }
             }
+            .navigationBarHidden(true)
         }
+        
+        
+        
+        
     }
     
     fileprivate func buttons() -> some View {
@@ -112,8 +110,8 @@ struct FriendsList: View {
     }
 }
 
-struct FriendsList_Previews: PreviewProvider {
+struct playground_Previews: PreviewProvider {
     static var previews: some View {
-        FriendsList()
+        playground()
     }
 }
