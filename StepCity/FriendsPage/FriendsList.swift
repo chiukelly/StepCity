@@ -8,33 +8,34 @@
 import SwiftUI
 
 struct FriendsList: View {
+    @Environment(\.presentationMode) var presentationMode:
+        Binding<PresentationMode>
+    // self.presentationMode.wrappedValue.dismiss()
+    
     var body: some View {
         let numbers = [1, 2, 3, 4, 5, 6, 7]
         
-        ZStack {
             NavigationView {
-                Text("")
-            }
-            
-            Button(action: {}) {
-                
-            }
-            
-            GeometryReader { gr in
-                VStack(spacing: 20.0) {
-                    buttons()
-                        .frame(height: gr.size.height * 0.12)
-                        
+                GeometryReader { gr in
                     VStack(spacing: 20.0) {
-                        ForEach(numbers, id:\.self) { number in
-                            friendTemplate(number)
-                                .padding(.horizontal)
-                                .frame(width: gr.size.width, height: gr.size.height * 0.1)
+                        buttons()
+                            .frame(height: gr.size.height * 0.12)
+                            
+                        VStack(spacing: 20.0) {
+                            ForEach(numbers, id:\.self) { number in
+                                friendTemplate(number)
+                                    .padding(.horizontal)
+                                    .frame(width: gr.size.width, height: gr.size.height * 0.1)
+                            }
                         }
                     }
                 }
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
             }
-        }
+            
+        
     }
     
     fileprivate func buttons() -> some View {
@@ -46,7 +47,9 @@ struct FriendsList: View {
                         .padding(.leading)
                     
                     HStack(spacing: 0.0) {
-                        NavigationLink(destination: FriendsList()) {
+                        Button(action: {
+                            print("Leaderboard Tapped")
+                            }) {
                             ZStack {
                                 Rectangle()
                                     .fill(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
@@ -59,7 +62,9 @@ struct FriendsList: View {
                             }
                         }
                         
-                        NavigationLink(destination: AddFriends()) {
+                        Button(action: {
+                            print("Add Friends Tapped")
+                        }) {
                             ZStack {
                                 Rectangle()
                                     .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
