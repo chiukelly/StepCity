@@ -7,25 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3312FD0325717E61002ECA72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3312FD0225717E61002ECA72 /* GoogleService-Info.plist */; };
 		339952822563102200CA10B6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339952812563102200CA10B6 /* Login.swift */; };
 		33995286256310FB00CA10B6 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */; };
 		931DE205A4E705E206951470 /* Pods_StepCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */; };
 		D26B1982256D983F00910816 /* AddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26B1981256D983F00910816 /* AddFriends.swift */; };
-		D27AC9012563071500484E48 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8F52563071500484E48 /* Roboto-BoldItalic.ttf */; };
-		D27AC9022563071500484E48 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8F62563071500484E48 /* Roboto-ThinItalic.ttf */; };
-		D27AC9032563071500484E48 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8F72563071500484E48 /* Roboto-Thin.ttf */; };
-		D27AC9042563071500484E48 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8F82563071500484E48 /* Roboto-Medium.ttf */; };
-		D27AC9052563071500484E48 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8F92563071500484E48 /* Roboto-Light.ttf */; };
-		D27AC9062563071500484E48 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8FA2563071500484E48 /* Roboto-LightItalic.ttf */; };
-		D27AC9072563071500484E48 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8FB2563071500484E48 /* Roboto-MediumItalic.ttf */; };
-		D27AC9082563071500484E48 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8FC2563071500484E48 /* Roboto-Regular.ttf */; };
-		D27AC9092563071500484E48 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8FD2563071500484E48 /* Roboto-Bold.ttf */; };
-		D27AC90A2563071500484E48 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8FE2563071500484E48 /* Roboto-Black.ttf */; };
-		D27AC90B2563071500484E48 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC8FF2563071500484E48 /* Roboto-BlackItalic.ttf */; };
-		D27AC90C2563071500484E48 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27AC9002563071500484E48 /* Roboto-Italic.ttf */; };
 		D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28DEF9F25573CA900B4A524 /* StepCityApp.swift */; };
-		D28DEFA225573CA900B4A524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28DEFA125573CA900B4A524 /* ContentView.swift */; };
 		D28DEFA425573CAA00B4A524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFA325573CAA00B4A524 /* Assets.xcassets */; };
 		D28DEFA725573CAA00B4A524 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFA625573CAA00B4A524 /* Preview Assets.xcassets */; };
 		D28DEFBC2557400A00B4A524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFBB2557400A00B4A524 /* Main.storyboard */; };
@@ -46,12 +32,11 @@
 		D2AFFC1F255DC09E00E7529F /* RobotoMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2AFFC11255DC09E00E7529F /* RobotoMono-Light.ttf */; };
 		D2AFFC20255DC09E00E7529F /* RobotoMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2AFFC12255DC09E00E7529F /* RobotoMono-BoldItalic.ttf */; };
 		D2FF87D025603CD1007B1CDA /* FriendsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFFBEA255C3D6000E7529F /* FriendsList.swift */; };
-		D2FF87D325603CE3007B1CDA /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF87D225603CE3007B1CDA /* SwiftUIView.swift */; };
+		D2FF87D325603CE3007B1CDA /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3312FD0225717E61002ECA72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		339952812563102200CA10B6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
 		74908C8AD800D098E7F49547 /* Pods-StepCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.debug.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,7 +44,6 @@
 		D26B1981256D983F00910816 /* AddFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriends.swift; sourceTree = "<group>"; };
 		D28DEF9C25573CA900B4A524 /* StepCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28DEF9F25573CA900B4A524 /* StepCityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCityApp.swift; sourceTree = "<group>"; };
-		D28DEFA125573CA900B4A524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D28DEFA325573CAA00B4A524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D28DEFA625573CAA00B4A524 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D28DEFA825573CAA00B4A524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +65,6 @@
 		D2AFFC10255DC09E00E7529F /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		D2AFFC11255DC09E00E7529F /* RobotoMono-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Light.ttf"; sourceTree = "<group>"; };
 		D2AFFC12255DC09E00E7529F /* RobotoMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-BoldItalic.ttf"; sourceTree = "<group>"; };
-		D2C377E2255740E70005B408 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,11 +130,9 @@
 				D2A38AD925575975007B5A88 /* FriendsPage */,
 				D28DEFBB2557400A00B4A524 /* Main.storyboard */,
 				D28DEF9F25573CA900B4A524 /* StepCityApp.swift */,
-				D28DEFA125573CA900B4A524 /* ContentView.swift */,
 				D2A38AD6255756E1007B5A88 /* AppDelegate.swift */,
 				D28DEFA325573CAA00B4A524 /* Assets.xcassets */,
 				D28DEFA825573CAA00B4A524 /* Info.plist */,
-				3312FD0225717E61002ECA72 /* GoogleService-Info.plist */,
 				D28DEFA525573CAA00B4A524 /* Preview Content */,
 			);
 			path = StepCity;
@@ -169,9 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AFFBEA255C3D6000E7529F /* FriendsList.swift */,
-				D2EC4E4C257068D80085972C /* playground.swift */,
 				D26B1981256D983F00910816 /* AddFriends.swift */,
-				D2FF87D225603CE3007B1CDA /* SwiftUIView.swift */,
 				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
 			);
 			path = FriendsPage;
@@ -274,7 +253,6 @@
 				D2AFFC1D255DC09E00E7529F /* RobotoMono-ExtraLightItalic.ttf in Resources */,
 				D28DEFA425573CAA00B4A524 /* Assets.xcassets in Resources */,
 				33995286256310FB00CA10B6 /* PixelOperator-Bold.ttf in Resources */,
-				3312FD0325717E61002ECA72 /* GoogleService-Info.plist in Resources */,
 				D2AFFC1E255DC09E00E7529F /* RobotoMono-Regular.ttf in Resources */,
 				D2AFFC20255DC09E00E7529F /* RobotoMono-BoldItalic.ttf in Resources */,
 			);
@@ -329,12 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2EC4E4D257068D80085972C /* playground.swift in Sources */,
 				D2A38AD7255756E1007B5A88 /* AppDelegate.swift in Sources */,
-				D2FF87D325603CE3007B1CDA /* SwiftUIView.swift in Sources */,
+				D2FF87D325603CE3007B1CDA /* (null) in Sources */,
 				D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */,
 				D26B1982256D983F00910816 /* AddFriends.swift in Sources */,
-				D28DEFA225573CA900B4A524 /* ContentView.swift in Sources */,
 				D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */,
 				D2FF87D025603CD1007B1CDA /* FriendsList.swift in Sources */,
 				339952822563102200CA10B6 /* Login.swift in Sources */,
