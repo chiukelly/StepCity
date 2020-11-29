@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TestFile: View {
+struct EmmanuelTestFile: View {
     var body: some View {
         Image("search_logo")
     }
@@ -15,6 +15,6 @@ struct TestFile: View {
 
 struct TestFile_Previews: PreviewProvider {
     static var previews: some View {
-        TestFile()
+        EmmanuelTestFile()
     }
 }
