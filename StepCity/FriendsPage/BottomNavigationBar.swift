@@ -14,7 +14,7 @@ struct BottomNavigationBar: View {
 
     var body: some View {
         TabView() {
-            Text("")
+            Leaderboard()
                 .multilineTextAlignment(.leading)
                 .tabItem {
                     Image("mycity_logo")

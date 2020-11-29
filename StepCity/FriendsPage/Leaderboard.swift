@@ -7,22 +7,8 @@
 
 import SwiftUI
 
-struct FriendsPage: View {
-    @Environment(\.presentationMode) var presentationMode
-    
-    var body: some View {
-        Leaderboard()
-    }
-}
-
-class CurrentView: ObservableObject {
-    @Published var showingLeaderboard = true;
-    @Published var showingAddFriends = true;
-}
-
 struct Leaderboard: View {
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var currentView = CurrentView()
     
     var body: some View {
         let numbers = [1, 2, 3, 4, 5, 6, 7]
@@ -30,7 +16,7 @@ struct Leaderboard: View {
             NavigationView {
                 GeometryReader { gr in
                     VStack(spacing: 20.0) {
-                        buttons()
+                        header()
                             .frame(height: gr.size.height * 0.12)
                             
                         VStack(spacing: 20.0) {
@@ -49,7 +35,7 @@ struct Leaderboard: View {
             }
     }
     
-    func buttons() -> some View {
+    func header() -> some View {
         return
             GeometryReader { gr in
                 VStack(alignment: .leading, spacing: 5.0) {
@@ -58,11 +44,8 @@ struct Leaderboard: View {
                         .padding(.leading)
                     
                     HStack(spacing: 0.0) {
-                        Button(action: {
-                            if currentView.showingAddFriends {
-                                self.presentationMode.wrappedValue.dismiss();
-                            }
-                        }) {
+                        // Do nothing
+                        Button(action: {}) {
                             ZStack {
                                 Rectangle()
                                     .fill(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
@@ -87,23 +70,6 @@ struct Leaderboard: View {
                                     .font(.custom("Roboto-Light", size: gr.size.height * 0.18))
                             }
                         }
-                        
-//                        Button(action: {
-//                            if currentView.showingLeaderboard {
-//                                AddFriends()
-//                            }
-//                        }) {
-//                            ZStack {
-//                                Rectangle()
-//                                    .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//
-//                                Rectangle()
-//                                    .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
-//
-//                                Text("Add Friends")
-//                                    .font(.custom("Roboto-Light", size: gr.size.height * 0.18))
-//                            }
-//                        }
                     }
                 }
             }
@@ -150,37 +116,18 @@ struct AddFriends: View {
     
     var body: some View {
         GeometryReader { gr in
-            VStack(spacing: 0.0){
-                // Friends Header
-                Text("Friends")
-                    .font(Font.custom("Roboto-Light", size: gr.size.height * 0.05))
-                    .padding(.leading)
-                    .frame(width: gr.size.width, height: gr.size.height * 0.08, alignment: .leading)
+            VStack(spacing: 20.0){
+                header()
+                    .frame(height: gr.size.height * 0.12)
+                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                    .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)))
 
-                // Leaderboard & Add Friends Options
-                HStack(spacing: 0.0) {
-                        ZStack {
-                            Rectangle()
-                            .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-
-                            Rectangle()
-                            .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
-
-                            Text("Leaderboard")
-                                .font(.custom("Roboto-Light", size: gr.size.height * 0.020))
-                        }
-                        
-                        ZStack {
-                            Rectangle()
-                            .fill(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
-
-                            Rectangle()
-                            .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
-                            
-                            Text("Add Friends").font(.custom("Roboto-Light", size: gr.size.height * 0.020))
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        }
-                } .frame(height: gr.size.height * 0.05)
+                    RoundedRectangle(cornerRadius: 5)
+                    .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 1)
+                }
+                .frame(width: gr.size.width * 0.9, height: gr.size.height * 0.05)
             }
         }
         // This hides the navigation space when you enter into this view
@@ -188,10 +135,50 @@ struct AddFriends: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
+    
+    func header() -> some View {
+        return
+            GeometryReader { gr in
+                VStack(alignment: .leading, spacing: 5.0) {
+                    Text("Friends")
+                        .font(Font.custom("Roboto-Light", size: gr.size.height * 0.45))
+                        .padding(.leading)
+                    
+                    HStack(spacing: 0.0) {
+                        // Return back to leaderboard page
+                        Button(action: {self.presentationMode.wrappedValue.dismiss()}, label: {
+                            ZStack {
+                                Rectangle()
+                                .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+
+                                Rectangle()
+                                .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
+
+                                Text("Leaderboard")
+                                    .font(.custom("Roboto-Light", size: gr.size.height * 0.18))
+                            }
+                        })
+                        
+                        Button(action: {}, label: {
+                            ZStack {
+                                Rectangle()
+                                .fill(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
+
+                                Rectangle()
+                                .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
+                                
+                                Text("Add Friends").font(.custom("Roboto-Light", size: gr.size.height * 0.18))
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            }
+                        })
+                    }
+                }
+            }
+    }
 }
 
 struct FriendsList_Previews: PreviewProvider {
     static var previews: some View {
-        Leaderboard()
+        AddFriends()
     }
 }

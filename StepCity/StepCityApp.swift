@@ -11,11 +11,9 @@ import SwiftUI
 struct StepCityApp: App {
     var body: some Scene {
         WindowGroup {
-            FriendsPage()
+            Leaderboard()
         }
-    }
-    
-    
+    }  
 }
 
 struct StepCityApp_Previews: PreviewProvider {
