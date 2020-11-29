@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3312FD1425742740002ECA72 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1325742740002ECA72 /* SessionStore.swift */; };
 		339952822563102200CA10B6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339952812563102200CA10B6 /* Login.swift */; };
 		33995286256310FB00CA10B6 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */; };
 		931DE205A4E705E206951470 /* Pods_StepCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3312FD1325742740002ECA72 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		339952812563102200CA10B6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
 		74908C8AD800D098E7F49547 /* Pods-StepCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.debug.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				D295D3CF257377240049FB16 /* TestFile.swift */,
 				D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */,
 				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
+				3312FD1325742740002ECA72 /* SessionStore.swift */,
 				3399528025630FC200CA10B6 /* LoginSignupPage */,
 				D28DEFBB2557400A00B4A524 /* Main.storyboard */,
 				D28DEF9F25573CA900B4A524 /* StepCityApp.swift */,
@@ -305,6 +308,7 @@
 				D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */,
 				D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */,
 				D2FF87D025603CD1007B1CDA /* Leaderboard.swift in Sources */,
+				3312FD1425742740002ECA72 /* SessionStore.swift in Sources */,
 				339952822563102200CA10B6 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
