@@ -126,8 +126,50 @@ struct AddFriends: View {
 
                     RoundedRectangle(cornerRadius: 5)
                     .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 1)
-                }
-                .frame(width: gr.size.width * 0.9, height: gr.size.height * 0.05)
+                    
+                    HStack{
+                        Image("search_logo")
+                        
+                        Text("find friends")
+                            .font(.custom("Roboto Light", size: gr.size.height * 0.03)).foregroundColor(Color(#colorLiteral(red: 0.5, green: 0.49, blue: 0.49, alpha: 1)))
+                        
+                        Spacer()
+                    } .padding(.leading)
+                } .frame(width: gr.size.width * 0.9, height: gr.size.height * 0.05)
+                
+                Text("Requests")
+                    .font(.custom("Roboto Mono Regular", size: gr.size.height * 0.03))
+                    .frame(width: gr.size.width * 0.9, alignment: .leading)
+                
+                // Friend Request Template
+                ZStack {
+                    RoundedRectangle(cornerRadius: 8)
+                    .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.800000011920929)))
+
+                    RoundedRectangle(cornerRadius: 8)
+                    .strokeBorder(Color(#colorLiteral(red: 0.6313725709915161, green: 0.6627451181411743, blue: 0.9882352948188782, alpha: 1)), lineWidth: 1)
+                    
+                    HStack(spacing: 5.0){
+                        Image(systemName: "circle.fill")
+                            .resizable()
+                            .frame(width: gr.size.height * 0.04, height: gr.size.height * 0.04)
+                            .foregroundColor(.gray)
+                        
+                        Text("@usernameeeeee")
+                            .font(.custom("Roboto Light", size: gr.size.height * 0.03))
+                        
+                        Spacer()
+                        
+                        Image(systemName: "multiply.circle")
+                            .resizable()
+                            .frame(width: gr.size.height * 0.04, height: gr.size.height * 0.04)
+                        
+                        Image(systemName: "checkmark.circle.fill")
+                            .resizable()
+                            .frame(width: gr.size.height * 0.04, height: gr.size.height * 0.04)
+                            .foregroundColor(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
+                    } .padding(.horizontal, 10.0)
+                } .frame(width: gr.size.width * 0.9, height: gr.size.height * 0.05)
             }
         }
         // This hides the navigation space when you enter into this view
@@ -179,6 +221,6 @@ struct AddFriends: View {
 
 struct FriendsList_Previews: PreviewProvider {
     static var previews: some View {
-        AddFriends()
+        Leaderboard()
     }
 }

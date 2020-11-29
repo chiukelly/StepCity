@@ -9,9 +9,7 @@ import SwiftUI
 
 struct TestFile: View {
     var body: some View {
-        Button(action: {print("check debug")}, label: {
-            Text("Button")
-        })
+        Image("search_logo")
     }
 }
 
