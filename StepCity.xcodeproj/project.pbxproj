@@ -49,8 +49,8 @@
 		D28DEFBB2557400A00B4A524 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D295D3CF257377240049FB16 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 		D2A38AD6255756E1007B5A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BottomNavigationBar.swift; path = StepCity/FriendsPage/BottomNavigationBar.swift; sourceTree = SOURCE_ROOT; };
-		D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Leaderboard.swift; path = StepCity/FriendsPage/Leaderboard.swift; sourceTree = SOURCE_ROOT; };
+		D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BottomNavigationBar.swift; path = StepCity/BottomNavigationBar.swift; sourceTree = SOURCE_ROOT; };
+		D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Leaderboard.swift; path = StepCity/Leaderboard.swift; sourceTree = SOURCE_ROOT; };
 		D2AFFC05255DC09B00E7529F /* RobotoMono-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Italic.ttf"; sourceTree = "<group>"; };
 		D2AFFC06255DC09B00E7529F /* RobotoMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Medium.ttf"; sourceTree = "<group>"; };
 		D2AFFC07255DC09C00E7529F /* RobotoMono-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -126,8 +126,10 @@
 		D28DEF9E25573CA900B4A524 /* StepCity */ = {
 			isa = PBXGroup;
 			children = (
+				D295D3CF257377240049FB16 /* TestFile.swift */,
+				D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */,
+				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
 				3399528025630FC200CA10B6 /* LoginSignupPage */,
-				D2A38AD925575975007B5A88 /* FriendsPage */,
 				D28DEFBB2557400A00B4A524 /* Main.storyboard */,
 				D28DEF9F25573CA900B4A524 /* StepCityApp.swift */,
 				D2A38AD6255756E1007B5A88 /* AppDelegate.swift */,
@@ -144,16 +146,6 @@
 				D28DEFA625573CAA00B4A524 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D2A38AD925575975007B5A88 /* FriendsPage */ = {
-			isa = PBXGroup;
-			children = (
-				D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */,
-				D295D3CF257377240049FB16 /* TestFile.swift */,
-				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
-			);
-			path = FriendsPage;
 			sourceTree = "<group>";
 		};
 		D2AFFBEE255C4C0600E7529F /* fonts */ = {
