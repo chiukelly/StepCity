@@ -7,10 +7,22 @@
 
 import SwiftUI
 
-struct FriendsList: View {
-    @Environment(\.presentationMode) var presentationMode:
-        Binding<PresentationMode>
-    // self.presentationMode.wrappedValue.dismiss()
+struct FriendsPage: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        Leaderboard()
+    }
+}
+
+class CurrentView: ObservableObject {
+    @Published var showingLeaderboard = true;
+    @Published var showingAddFriends = true;
+}
+
+struct Leaderboard: View {
+    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var currentView = CurrentView()
     
     var body: some View {
         let numbers = [1, 2, 3, 4, 5, 6, 7]
@@ -30,15 +42,14 @@ struct FriendsList: View {
                         }
                     }
                 }
+                // This hides the navigation space in the current view
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
             }
-            
-        
     }
     
-    fileprivate func buttons() -> some View {
+    func buttons() -> some View {
         return
             GeometryReader { gr in
                 VStack(alignment: .leading, spacing: 5.0) {
@@ -48,8 +59,10 @@ struct FriendsList: View {
                     
                     HStack(spacing: 0.0) {
                         Button(action: {
-                            print("Leaderboard Tapped")
-                            }) {
+                            if currentView.showingAddFriends {
+                                self.presentationMode.wrappedValue.dismiss();
+                            }
+                        }) {
                             ZStack {
                                 Rectangle()
                                     .fill(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
@@ -62,9 +75,7 @@ struct FriendsList: View {
                             }
                         }
                         
-                        Button(action: {
-                            print("Add Friends Tapped")
-                        }) {
+                        NavigationLink(destination: AddFriends()) {
                             ZStack {
                                 Rectangle()
                                     .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -76,12 +87,29 @@ struct FriendsList: View {
                                     .font(.custom("Roboto-Light", size: gr.size.height * 0.18))
                             }
                         }
+                        
+//                        Button(action: {
+//                            if currentView.showingLeaderboard {
+//                                AddFriends()
+//                            }
+//                        }) {
+//                            ZStack {
+//                                Rectangle()
+//                                    .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//
+//                                Rectangle()
+//                                    .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
+//
+//                                Text("Add Friends")
+//                                    .font(.custom("Roboto-Light", size: gr.size.height * 0.18))
+//                            }
+//                        }
                     }
                 }
             }
     }
     
-    fileprivate func friendTemplate(_ number: Int) -> some View {
+    func friendTemplate(_ number: Int) -> some View {
         return
             GeometryReader { gr in
                 ZStack {
@@ -117,8 +145,53 @@ struct FriendsList: View {
     }
 }
 
+struct AddFriends: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        GeometryReader { gr in
+            VStack(spacing: 0.0){
+                // Friends Header
+                Text("Friends")
+                    .font(Font.custom("Roboto-Light", size: gr.size.height * 0.05))
+                    .padding(.leading)
+                    .frame(width: gr.size.width, height: gr.size.height * 0.08, alignment: .leading)
+
+                // Leaderboard & Add Friends Options
+                HStack(spacing: 0.0) {
+                        ZStack {
+                            Rectangle()
+                            .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+
+                            Rectangle()
+                            .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
+
+                            Text("Leaderboard")
+                                .font(.custom("Roboto-Light", size: gr.size.height * 0.020))
+                        }
+                        
+                        ZStack {
+                            Rectangle()
+                            .fill(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
+
+                            Rectangle()
+                            .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
+                            
+                            Text("Add Friends").font(.custom("Roboto-Light", size: gr.size.height * 0.020))
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        }
+                } .frame(height: gr.size.height * 0.05)
+            }
+        }
+        // This hides the navigation space when you enter into this view
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+    }
+}
+
 struct FriendsList_Previews: PreviewProvider {
     static var previews: some View {
-        FriendsList()
+        Leaderboard()
     }
 }
