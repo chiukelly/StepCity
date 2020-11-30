@@ -22,7 +22,7 @@ struct ContentView: View {
                     Text("Sign Out")
                 }
             } else {
-                AuthView()
+                LogInView()
             }
         }.onAppear(perform: getUser)
     }

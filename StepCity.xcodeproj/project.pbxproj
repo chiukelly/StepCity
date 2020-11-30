@@ -11,16 +11,13 @@
 		3312FD1725744172002ECA72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1625744172002ECA72 /* SceneDelegate.swift */; };
 		3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD19257443F3002ECA72 /* ContentView.swift */; };
 		3321FEB525749F1400FAB1EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */; };
-		339952822563102200CA10B6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339952812563102200CA10B6 /* Login.swift */; };
 		33995286256310FB00CA10B6 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */; };
-		33EDFB81257550CA00ED760F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EDFB80257550CA00ED760F /* AuthView.swift */; };
+		33EDFB81257550CA00ED760F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EDFB80257550CA00ED760F /* LogInView.swift */; };
 		931DE205A4E705E206951470 /* Pods_StepCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */; };
 		D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28DEF9F25573CA900B4A524 /* StepCityApp.swift */; };
 		D28DEFA425573CAA00B4A524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFA325573CAA00B4A524 /* Assets.xcassets */; };
 		D28DEFA725573CAA00B4A524 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28DEFA625573CAA00B4A524 /* Preview Assets.xcassets */; };
-		D295D3D0257377240049FB16 /* EmmanuelTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295D3CF257377240049FB16 /* EmmanuelTestFile.swift */; };
 		D295D3D9257443B10049FB16 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295D3D8257443B10049FB16 /* UserProfile.swift */; };
-		D2A38AD7255756E1007B5A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38AD6255756E1007B5A88 /* AppDelegate.swift */; };
 		D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */; };
 		D2AFFC13255DC09E00E7529F /* RobotoMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2AFFC05255DC09B00E7529F /* RobotoMono-Italic.ttf */; };
 		D2AFFC14255DC09E00E7529F /* RobotoMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2AFFC06255DC09B00E7529F /* RobotoMono-Medium.ttf */; };
@@ -46,9 +43,8 @@
 		3312FD1625744172002ECA72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3312FD19257443F3002ECA72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		339952812563102200CA10B6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
-		33EDFB80257550CA00ED760F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		33EDFB80257550CA00ED760F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		74908C8AD800D098E7F49547 /* Pods-StepCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.debug.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.debug.xcconfig"; sourceTree = "<group>"; };
 		98B479DD870951DC9CF2A909 /* Pods-StepCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.release.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.release.xcconfig"; sourceTree = "<group>"; };
 		D28DEF9C25573CA900B4A524 /* StepCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,11 +52,9 @@
 		D28DEFA325573CAA00B4A524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D28DEFA625573CAA00B4A524 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D28DEFA825573CAA00B4A524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D295D3CF257377240049FB16 /* EmmanuelTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelTestFile.swift; sourceTree = "<group>"; };
 		D295D3D8257443B10049FB16 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		D2A38AD6255756E1007B5A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BottomNavigationBar.swift; path = StepCity/BottomNavigationBar.swift; sourceTree = SOURCE_ROOT; };
-		D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Leaderboard.swift; path = StepCity/Leaderboard.swift; sourceTree = SOURCE_ROOT; };
+		D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BottomNavigationBar.swift; path = StepCity/Views/BottomNavigationBar.swift; sourceTree = SOURCE_ROOT; };
+		D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Leaderboard.swift; path = StepCity/Views/Leaderboard.swift; sourceTree = SOURCE_ROOT; };
 		D2AFFC05255DC09B00E7529F /* RobotoMono-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Italic.ttf"; sourceTree = "<group>"; };
 		D2AFFC06255DC09B00E7529F /* RobotoMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Medium.ttf"; sourceTree = "<group>"; };
 		D2AFFC07255DC09C00E7529F /* RobotoMono-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -136,16 +130,11 @@
 		D28DEF9E25573CA900B4A524 /* StepCity */ = {
 			isa = PBXGroup;
 			children = (
-				D295D3D8257443B10049FB16 /* UserProfile.swift */,
-				D2A38AD6255756E1007B5A88 /* AppDelegate.swift */,
+				D2CA309B2575BE6600FA5816 /* Models */,
+				D2CA30972575BD8100FA5816 /* Views */,
 				3312FD1625744172002ECA72 /* SceneDelegate.swift */,
 				3312FD19257443F3002ECA72 /* ContentView.swift */,
-				33EDFB80257550CA00ED760F /* AuthView.swift */,
 				3312FD1325742740002ECA72 /* SessionStore.swift */,
-				D295D3CF257377240049FB16 /* EmmanuelTestFile.swift */,
-				D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */,
-				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
-				339952812563102200CA10B6 /* Login.swift */,
 				D28DEF9F25573CA900B4A524 /* StepCityApp.swift */,
 				D28DEFA325573CAA00B4A524 /* Assets.xcassets */,
 				D28DEFA825573CAA00B4A524 /* Info.plist */,
@@ -183,6 +172,24 @@
 				D2AFFC0E255DC09D00E7529F /* RobotoMono-ThinItalic.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		D2CA30972575BD8100FA5816 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33EDFB80257550CA00ED760F /* LogInView.swift */,
+				D295D3D8257443B10049FB16 /* UserProfile.swift */,
+				D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */,
+				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2CA309B2575BE6600FA5816 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,17 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A38AD7255756E1007B5A88 /* AppDelegate.swift in Sources */,
 				3312FD1725744172002ECA72 /* SceneDelegate.swift in Sources */,
-				D295D3D0257377240049FB16 /* EmmanuelTestFile.swift in Sources */,
-				33EDFB81257550CA00ED760F /* AuthView.swift in Sources */,
+				33EDFB81257550CA00ED760F /* LogInView.swift in Sources */,
 				D2FF87D325603CE3007B1CDA /* (null) in Sources */,
 				D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */,
 				D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */,
 				3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */,
 				D2FF87D025603CD1007B1CDA /* Leaderboard.swift in Sources */,
 				3312FD1425742740002ECA72 /* SessionStore.swift in Sources */,
-				339952822563102200CA10B6 /* Login.swift in Sources */,
 				D295D3D9257443B10049FB16 /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

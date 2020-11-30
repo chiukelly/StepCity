@@ -153,14 +153,14 @@ struct SignUpView: View {
                     .frame(width: gr.size.width * 0.90)
                 
                 // full name field
-                SecureField("enter full name", text: $password)
+                TextField("enter full name", text: $fullName)
                     .padding()
                     .background(lightGrayColor)
                     .cornerRadius(50.0).padding(.bottom, 20)
                     .frame(width: gr.size.width * 0.90)
                 
                 // username field
-                TextField("enter username", text: $password)
+                TextField("enter username", text: $username)
                     .padding()
                     .background(lightGrayColor)
                     .cornerRadius(50.0)
@@ -168,7 +168,7 @@ struct SignUpView: View {
                     .frame(width: gr.size.width * 0.90)
                 
                 // password field
-                TextField("enter password", text: $password)
+                SecureField("enter password", text: $password)
                     .padding()
                     .background(lightGrayColor)
                     .cornerRadius(50.0)
@@ -194,7 +194,7 @@ struct SignUpView: View {
 }
 
 
-struct AuthView: View {
+struct LogInView: View {
     var body: some View {
         NavigationView {
             SignInView()
@@ -202,11 +202,11 @@ struct AuthView: View {
     }
 }
 
-struct AuthView_Previews: PreviewProvider {
+struct LogInView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            AuthView().environmentObject(SessionStore())
-            AuthView().environmentObject(SessionStore())
+            LogInView().environmentObject(SessionStore())
+            LogInView().environmentObject(SessionStore())
         }
     }
 }
