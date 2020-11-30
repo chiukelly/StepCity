@@ -14,22 +14,25 @@ struct BottomNavigationBar: View {
 
     var body: some View {
         TabView() {
+            Text("My City")
+                .tabItem {
+                    Image(systemName: "building.2")
+                    Text("My City")
+                }
+            Text("Build Page")
+                .tabItem {
+                    Image(systemName: "hammer")
+                    Text("Build")
+                }
             Leaderboard()
-                .multilineTextAlignment(.leading)
                 .tabItem {
-                    Image("mycity_logo")
+                    Image(systemName: "person.2")
+                    Text("Friends")
                 }
-            Text("asdf")
+            UserProfile()
                 .tabItem {
-                    Image("build_logo")
-                }
-            Text("sadf")
-                .tabItem {
-                    Image("friends_logo")
-                }
-            Text("safd")
-                .tabItem {
-                    Image("setting_logo")
+                    Image(systemName: "gearshape")
+                    Text("Settings")
                 }
         }
     }

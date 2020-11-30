@@ -11,7 +11,7 @@ import SwiftUI
 struct StepCityApp: App {
     var body: some Scene {
         WindowGroup {
-            Leaderboard()
+            BottomNavigationBar()
         }
     }  
 }
