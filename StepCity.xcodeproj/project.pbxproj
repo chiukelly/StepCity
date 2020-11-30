@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3312FD1425742740002ECA72 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1325742740002ECA72 /* SessionStore.swift */; };
+		3312FD1725744172002ECA72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1625744172002ECA72 /* SceneDelegate.swift */; };
+		3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD19257443F3002ECA72 /* ContentView.swift */; };
+		3312FD1E25744A2D002ECA72 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1D25744A2D002ECA72 /* AuthView.swift */; };
+		3321FEAE25749A8900FAB1EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3321FEAD25749A8900FAB1EB /* GoogleService-Info.plist */; };
 		339952822563102200CA10B6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339952812563102200CA10B6 /* Login.swift */; };
 		33995286256310FB00CA10B6 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */; };
 		931DE205A4E705E206951470 /* Pods_StepCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */; };
@@ -39,6 +43,10 @@
 /* Begin PBXFileReference section */
 		0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3312FD1325742740002ECA72 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		3312FD1625744172002ECA72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3312FD19257443F3002ECA72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3312FD1D25744A2D002ECA72 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		3321FEAD25749A8900FAB1EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		339952812563102200CA10B6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
 		74908C8AD800D098E7F49547 /* Pods-StepCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.debug.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +117,7 @@
 		D28DEF9325573CA900B4A524 = {
 			isa = PBXGroup;
 			children = (
+				3321FEAD25749A8900FAB1EB /* GoogleService-Info.plist */,
 				D2AFFBEE255C4C0600E7529F /* fonts */,
 				D28DEF9E25573CA900B4A524 /* StepCity */,
 				D28DEF9D25573CA900B4A524 /* Products */,
@@ -128,12 +137,15 @@
 		D28DEF9E25573CA900B4A524 /* StepCity */ = {
 			isa = PBXGroup;
 			children = (
+				D2A38AD6255756E1007B5A88 /* AppDelegate.swift */,
+				3312FD1625744172002ECA72 /* SceneDelegate.swift */,
+				3312FD19257443F3002ECA72 /* ContentView.swift */,
+				3312FD1D25744A2D002ECA72 /* AuthView.swift */,
 				3312FD1325742740002ECA72 /* SessionStore.swift */,
 				3399528025630FC200CA10B6 /* LoginSignupPage */,
 				D2A38AD925575975007B5A88 /* FriendsPage */,
 				D28DEFBB2557400A00B4A524 /* Main.storyboard */,
 				D28DEF9F25573CA900B4A524 /* StepCityApp.swift */,
-				D2A38AD6255756E1007B5A88 /* AppDelegate.swift */,
 				D28DEFA325573CAA00B4A524 /* Assets.xcassets */,
 				D28DEFA825573CAA00B4A524 /* Info.plist */,
 				D28DEFA525573CAA00B4A524 /* Preview Content */,
@@ -251,6 +263,7 @@
 				D2AFFC1F255DC09E00E7529F /* RobotoMono-Light.ttf in Resources */,
 				D28DEFA725573CAA00B4A524 /* Preview Assets.xcassets in Resources */,
 				D2AFFC14255DC09E00E7529F /* RobotoMono-Medium.ttf in Resources */,
+				3321FEAE25749A8900FAB1EB /* GoogleService-Info.plist in Resources */,
 				D28DEFBC2557400A00B4A524 /* Main.storyboard in Resources */,
 				D2AFFC19255DC09E00E7529F /* RobotoMono-MediumItalic.ttf in Resources */,
 				D2AFFC1D255DC09E00E7529F /* RobotoMono-ExtraLightItalic.ttf in Resources */,
@@ -312,11 +325,14 @@
 			files = (
 				D2A38AD7255756E1007B5A88 /* AppDelegate.swift in Sources */,
 				D295D3D0257377240049FB16 /* TestFile.swift in Sources */,
+				3312FD1725744172002ECA72 /* SceneDelegate.swift in Sources */,
 				D2FF87D325603CE3007B1CDA /* (null) in Sources */,
 				D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */,
 				D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */,
+				3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */,
 				D2FF87D025603CD1007B1CDA /* Leaderboard.swift in Sources */,
 				3312FD1425742740002ECA72 /* SessionStore.swift in Sources */,
+				3312FD1E25744A2D002ECA72 /* AuthView.swift in Sources */,
 				339952822563102200CA10B6 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +379,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -423,7 +439,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -448,7 +464,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StepCity/Preview Content\"";
-				DEVELOPMENT_TEAM = 3P3GKBLHRU;
+				DEVELOPMENT_TEAM = 9U3WTVQ9J9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StepCity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -456,7 +472,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Emmanuel-Ihim.StepCity";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emmanuel-Ihim.StepCity2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,7 +487,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StepCity/Preview Content\"";
-				DEVELOPMENT_TEAM = 3P3GKBLHRU;
+				DEVELOPMENT_TEAM = 9U3WTVQ9J9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StepCity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -479,7 +495,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Emmanuel-Ihim.StepCity";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emmanuel-Ihim.StepCity2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
