@@ -9,7 +9,20 @@ import SwiftUI
 
 struct EmmanuelTestFile: View {
     var body: some View {
-        Image("search_logo")
+        GeometryReader { gr in
+            VStack {
+                Spacer()
+                
+                Image("main_buildings")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                    .frame(width: gr.size.width, height: gr.size.height * 0.5)
+                    .offset(x: -(gr.size.width * 0.04))
+                    
+                    
+            }
+        }
     }
 }
 

@@ -32,55 +32,85 @@ struct SignInView : View {
 
     var body: some View {
         GeometryReader { gr in
-            VStack (spacing: 18.0){
-            // App name
-            LinearGradient(gradient: Gradient(colors: [.black, Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1))]),
-            startPoint: .leading,endPoint: .trailing)
-                .mask(Text("STEPCITY"))
-                .padding(.bottom)
-                .font(Font.custom("PixelOperator-Bold", size: gr.size.height * 0.10))
-                .frame(width: gr.size.width, height: gr.size.height * 0.10)
-                
-            // email field
-            TextField("enter email", text: $email)
-                .padding()
-                .background(lightGrayColor)
-                .cornerRadius(40.0)
-                .frame(width: gr.size.width * 0.90)
-                
-            // password field
-            SecureField("enter password", text: $password)
-                .padding()
-                .background(lightGrayColor)
-                .cornerRadius(50.0)
-                .frame(width: gr.size.width * 0.90)
-                
-            // login button
-            Button(action: {print("Button Tapped")}) {
-                Text("sign in")
-                    .font(Font.custom("Roboto-Light", size: gr.size.height * 0.023))
-                    .frame(width: gr.size.width * 0.90, height: gr.size.height * 0.04)
-                    .foregroundColor(.white).background(darkBlueColor).cornerRadius(50.0)
-            }
-                
-            if (error != "") {
-                Text(error)
-                    .font(Font.custom("Roboto-Light", size: gr.size.height * 0.023))
-                    .foregroundColor(.red)
-            }
-                
-            NavigationLink(destination: SignUpView()) {
-                HStack {
-                    Text("don't have an account?")
-                        .font(Font.custom("Roboto-Light", size: gr.size.height * 0.023))
-                        .foregroundColor(.black)
+            VStack {
+                VStack (spacing: 18.0){
+                    // App name
+                    LinearGradient(gradient: Gradient(colors: [.black, Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1))]),
+                    startPoint: .leading,endPoint: .trailing)
+                        .mask(Text("STEPCITY"))
+                        .padding(.bottom)
+                        .font(Font.custom("PixelOperator-Bold", size: gr.size.height * 0.10))
+                        .frame(height: gr.size.height * 0.10)
+
+                        CustomTextField(placeholder: Text("enter email"), text: $email)
+                        CustomTextField(placeholder: Text("enter password"), text: $password)
+
+                    // login button
+                    Button(action: {}) {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 27)
+                            .fill(Color("mainColor"))
+
+                            RoundedRectangle(cornerRadius: 27)
+                            .strokeBorder(Color(#colorLiteral(red: 0.6883333325386047, green: 0.7136112451553345, blue: 0.9449999928474426, alpha: 1)), lineWidth: 1)
+                            
+                            Text("sign in")
+                                .font(.custom("Roboto Light", size: gr.size.height * 0.025))
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        } .frame(height: gr.size.height * 0.09)
+                    }
+
+                    if (error != "") {
+                        Text(error)
+                            .font(Font.custom("Roboto-Light", size: gr.size.height * 0.023))
+                            .foregroundColor(.red)
+                    }
                     
-                    Text("sign up")
-                        .font(Font.custom("Roboto-Light", size: gr.size.height * 0.023))
-                        .foregroundColor(darkBlueColor)
+                    HStack {
+                        Text("don't have an account?")
+                            .font(Font.custom("Roboto-Light", size: gr.size.height * 0.023))
+                            .foregroundColor(.black)
+                        NavigationLink(destination: SignUpView()) {
+                            Text("sign up")
+                                .font(Font.custom("Roboto-Light", size: gr.size.height * 0.023))
+                                .foregroundColor(Color("mainColor"))
+                        }
                     }
                 }
+                    .padding(.horizontal, 30.0)
+                
+                VStack() {
+                    Image("main_buildings")
+                        .resizable()
+                        .scaledToFill()
+                        .ignoresSafeArea()
+                        .offset(x: -(gr.size.width * 0.1))
+                }
+                .frame(width: gr.size.width, height: gr.size.height * 0.5)
             }
+        }
+    }
+}
+
+struct CustomTextField: View {
+    var placeholder: Text
+    @Binding var text: String
+    var editingChanged: (Bool)->() = { _ in }
+    var commit: ()->() = { }
+
+    var body: some View {
+        ZStack(alignment: .leading) {
+            if text.isEmpty {
+                placeholder
+                    .foregroundColor(Color("mainColor"))
+                    .offset(x: 20)
+            }
+            TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
+                .padding(20)
+                .cornerRadius(40.0)
+                .overlay(RoundedRectangle(cornerRadius: 27)
+                            .strokeBorder(Color(#colorLiteral(red: 0.37254905700683594, green: 0.42353007197380066, blue: 0.8901960849761963, alpha: 0.4000000059604645)), lineWidth: 1))
+                .foregroundColor(Color("mainColor"))
         }
     }
 }
@@ -174,7 +204,10 @@ struct AuthView: View {
 
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView().environmentObject(SessionStore())
+        Group {
+            AuthView().environmentObject(SessionStore())
+            AuthView().environmentObject(SessionStore())
+        }
     }
 }
 
