@@ -10,7 +10,6 @@
 		3312FD1425742740002ECA72 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1325742740002ECA72 /* SessionStore.swift */; };
 		3312FD1725744172002ECA72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1625744172002ECA72 /* SceneDelegate.swift */; };
 		3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD19257443F3002ECA72 /* ContentView.swift */; };
-		3312FD1E25744A2D002ECA72 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1D25744A2D002ECA72 /* AuthView.swift */; };
 		3321FEB525749F1400FAB1EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */; };
 		339952822563102200CA10B6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339952812563102200CA10B6 /* Login.swift */; };
 		33995286256310FB00CA10B6 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */; };
@@ -46,7 +45,6 @@
 		3312FD1325742740002ECA72 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		3312FD1625744172002ECA72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3312FD19257443F3002ECA72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3312FD1D25744A2D002ECA72 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		339952812563102200CA10B6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 		33EDFB7B257543B600ED760F /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				3312FD1D25744A2D002ECA72 /* AuthView.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -142,9 +139,9 @@
 				D295D3D8257443B10049FB16 /* UserProfile.swift */,
 				D2A38AD6255756E1007B5A88 /* AppDelegate.swift */,
 				3312FD1625744172002ECA72 /* SceneDelegate.swift */,
+				3312FD19257443F3002ECA72 /* ContentView.swift */,
 				33EDFB80257550CA00ED760F /* AuthView.swift */,
 				3312FD1325742740002ECA72 /* SessionStore.swift */,
-				3312FD19257443F3002ECA72 /* ContentView.swift */,
 				D295D3CF257377240049FB16 /* EmmanuelTestFile.swift */,
 				D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */,
 				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
@@ -327,7 +324,6 @@
 				3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */,
 				D2FF87D025603CD1007B1CDA /* Leaderboard.swift in Sources */,
 				3312FD1425742740002ECA72 /* SessionStore.swift in Sources */,
-				3312FD1E25744A2D002ECA72 /* AuthView.swift in Sources */,
 				339952822563102200CA10B6 /* Login.swift in Sources */,
 				D295D3D9257443B10049FB16 /* UserProfile.swift in Sources */,
 			);
