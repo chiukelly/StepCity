@@ -46,7 +46,7 @@ struct SignInView : View {
                         CustomTextField(placeholder: Text("enter password"), text: $password)
 
                     // login button
-                    Button(action: {}) {
+                    Button(action: signIn) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 27)
                             .fill(Color("mainColor"))
