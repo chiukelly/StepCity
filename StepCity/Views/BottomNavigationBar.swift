@@ -16,23 +16,19 @@ struct BottomNavigationBar: View {
         TabView() {
             Text("My City")
                 .tabItem {
-                    Image(systemName: "building.2")
-                    Text("My City")
+                    Image("mycity_logo")
                 }
             Text("Build Page")
                 .tabItem {
                     Image(systemName: "hammer")
-                    Text("Build")
                 }
             Leaderboard()
                 .tabItem {
                     Image(systemName: "person.2")
-                    Text("Friends")
                 }
             UserProfile()
                 .tabItem {
                     Image(systemName: "gearshape")
-                    Text("Settings")
                 }
         }
     }

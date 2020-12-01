@@ -92,6 +92,7 @@ struct SignInView : View {
     }
 }
 
+// TODO: make password field a secure text
 struct CustomTextField: View {
     var placeholder: Text
     @Binding var text: String
