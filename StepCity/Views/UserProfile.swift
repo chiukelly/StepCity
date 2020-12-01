@@ -15,6 +15,7 @@ struct UserProfile: View {
                 Circle()
                     .fill(Color(#colorLiteral(red: 0.7686274647712708, green: 0.7686274647712708, blue: 0.7686274647712708, alpha: 1)))
                     .frame(width: gr.size.height * 0.2, height: gr.size.height * 0.2)
+                    .padding(.top)
                 
                 Text("@myusername")
                     .font(.custom("Roboto Light", size: gr.size.height * 0.037))
@@ -47,6 +48,8 @@ struct UserProfile: View {
                     .frame(width: gr.size.width, height: gr.size.height * 0.08)
                 dataTemplate("Profile Type", "Private")
                     .frame(width: gr.size.width, height: gr.size.height * 0.08)
+                
+                //TODO: add bottom divider across the screen
                 
             }
         }

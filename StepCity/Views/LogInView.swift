@@ -42,8 +42,10 @@ struct SignInView : View {
                         .font(Font.custom("PixelOperator-Bold", size: gr.size.height * 0.10))
                         .frame(height: gr.size.height * 0.10)
 
-                        CustomTextField(placeholder: Text("enter email"), text: $email)
-                        CustomTextField(placeholder: Text("enter password"), text: $password)
+                    CustomTextField(placeholder: Text("enter email")
+                                        .font(.custom("Roboto Light", size: gr.size.height * 0.025)), text: $email)
+                    CustomTextField(placeholder: Text("enter password")
+                                        .font(.custom("Roboto Light", size: gr.size.height * 0.025)), text: $password)
 
                     // login button
                     Button(action: signIn) {

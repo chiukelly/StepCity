@@ -11,30 +11,31 @@ struct Leaderboard: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        let numbers = [1, 2, 3, 4, 5, 6, 7]
+        let numbers = [1, 2, 3, 4, 5, 6]
         
-            NavigationView {
-                GeometryReader { gr in
-                    VStack(spacing: 20.0) {
-                        header()
-                            .frame(height: gr.size.height * 0.12)
-                            
-                        VStack(spacing: 20.0) {
-                            ForEach(numbers, id:\.self) { number in
-                                friendTemplate(number)
-                                    .padding(.horizontal)
-                                    .frame(width: gr.size.width, height: gr.size.height * 0.1)
-                            }
-                        }
+        // Parent Navigation view to allow navigation to Add Friends Page
+        NavigationView {
+            GeometryReader { gr in
+                // Leaderboard page parent VStack
+                VStack(spacing: 20.0) {
+                    header()
+                        .frame(height: gr.size.height * 0.12)
+                    
+                    // List of friends ranked in based on most # of steps
+                    // Currently static data
+                    ForEach(numbers, id:\.self) { number in
+                        friendTemplate(number)
+                            .padding(.horizontal, 30.0)
+                            .frame(width: gr.size.width, height: gr.size.height * 0.1)
                     }
                 }
-                // This hides the navigation space in the current view
-                .navigationBarTitle("")
-                .navigationBarHidden(true)
-                .navigationBarBackButtonHidden(true)
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+        }
     }
     
+    // Friends title + Leaderboard button and Add Friends navigation link
     func header() -> some View {
         return
             GeometryReader { gr in
@@ -53,7 +54,8 @@ struct Leaderboard: View {
                                 Rectangle()
                                     .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
                                 
-                                Text("Leaderboard").font(.custom("Roboto-Light", size: gr.size.height * 0.18))
+                                Text("Leaderboard")
+                                    .font(.custom("Roboto-Light", size: gr.size.height * 0.18))
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             }
                         }
@@ -75,6 +77,8 @@ struct Leaderboard: View {
             }
     }
     
+    // Design for friend block
+    // Static data
     func friendTemplate(_ number: Int) -> some View {
         return
             GeometryReader { gr in
@@ -88,29 +92,34 @@ struct Leaderboard: View {
                             .frame(width: gr.size.width * 0.15)
                             .multilineTextAlignment(.center)
                         
-                        Divider()
-                            .offset(x: -(gr.size.width * 0.018), y: 0)
+                        // Divider
+                        Rectangle()
+                            .frame(width: gr.size.width * 0.003)
+                            .foregroundColor(Color("mainColor"))
+                            .opacity(0.6)
+                            .offset(x: -(gr.size.width * 0.018))
                         
                         Circle()
                             .fill(Color(#colorLiteral(red: 0.7686274647712708, green: 0.7686274647712708, blue: 0.7686274647712708, alpha: 1)))
-                            .frame(width: gr.size.height * 0.5, height: gr.size.height * 0.5)
+                            .frame(width: gr.size.height * 0.6, height: gr.size.height * 0.6)
                         
                         Text("@userfriend")
-                            .font(.custom("Roboto-Light", size: gr.size.height * 0.35))
-                        
-                        Text("25,000 steps")
-                            .font(.custom("RobotoMono-Regular", size: 12))
-                            .foregroundColor(Color(#colorLiteral(red: 0.17, green: 0.23, blue: 0.84, alpha: 0.6)))
-                            //.frame(width: 100.0, height: 150.0)
-                            .offset(x: gr.size.height * 0.15, y: gr.size.height * 0.3)
+                            .font(.custom("Roboto-Light", size: gr.size.height * 0.25))
                         
                         Spacer()
                     }
+                    
+                    Text("25,000 steps")
+                        .font(.custom("RobotoMono-Regular", size: gr.size.height * 0.16))
+                        .foregroundColor(Color(#colorLiteral(red: 0.17, green: 0.23, blue: 0.84, alpha: 0.6)))
+                        //.frame(width: 100.0, height: 150.0)
+                        .offset(x: gr.size.width * 0.35, y: gr.size.height * 0.3)
                 }
             }
     }
 }
 
+// Add Friends Page
 struct AddFriends: View {
     @Environment(\.presentationMode) var presentationMode
     
@@ -178,6 +187,7 @@ struct AddFriends: View {
         .navigationBarBackButtonHidden(true)
     }
     
+    // TODO: fix button color 
     func header() -> some View {
         return
             GeometryReader { gr in
