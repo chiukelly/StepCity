@@ -10,6 +10,11 @@ import SwiftUI
 struct Leaderboard: View {
     @Environment(\.presentationMode) var presentationMode
     
+    // database leaderboard list 
+    @ObservedObject private var viewModel = LeaderboardUserViewModel()
+    
+    // use viewModel.leaderboardUserList
+    
     var body: some View {
         let numbers = [1, 2, 3, 4, 5, 6]
         
@@ -32,6 +37,9 @@ struct Leaderboard: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .onAppear() {
+                self.viewModel.fetchData()
+            }
         }
     }
     

@@ -13,6 +13,8 @@
 		3321FEB525749F1400FAB1EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */; };
 		33995286256310FB00CA10B6 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */; };
 		33EDFB81257550CA00ED760F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EDFB80257550CA00ED760F /* LogInView.swift */; };
+		33F20DE7257805E200EE4188 /* LeaderboardUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F20DE6257805E200EE4188 /* LeaderboardUserViewModel.swift */; };
+		33F20DEC2578071700EE4188 /* LeaderboardUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F20DEB2578071700EE4188 /* LeaderboardUser.swift */; };
 		931DE205A4E705E206951470 /* Pods_StepCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD2ACECB23195138F0A7A8E /* Pods_StepCity.framework */; };
 		D257CD6025772ACD0014D481 /* BuildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D257CD5F25772ACD0014D481 /* BuildView.swift */; };
 		D257CD6E25772E950014D481 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D257CD6D25772E950014D481 /* Color.swift */; };
@@ -48,6 +50,8 @@
 		3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
 		33EDFB80257550CA00ED760F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		33F20DE6257805E200EE4188 /* LeaderboardUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardUserViewModel.swift; sourceTree = "<group>"; };
+		33F20DEB2578071700EE4188 /* LeaderboardUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardUser.swift; sourceTree = "<group>"; };
 		74908C8AD800D098E7F49547 /* Pods-StepCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.debug.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.debug.xcconfig"; sourceTree = "<group>"; };
 		98B479DD870951DC9CF2A909 /* Pods-StepCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepCity.release.xcconfig"; path = "Target Support Files/Pods-StepCity/Pods-StepCity.release.xcconfig"; sourceTree = "<group>"; };
 		D257CD5F25772ACD0014D481 /* BuildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,22 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		33F20DE5257805CF00EE4188 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				33F20DE6257805E200EE4188 /* LeaderboardUserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		33F20DEA257806FE00EE4188 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33F20DEB2578071700EE4188 /* LeaderboardUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C77CC4404CD4E5080E2059C0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +156,8 @@
 		D28DEF9E25573CA900B4A524 /* StepCity */ = {
 			isa = PBXGroup;
 			children = (
+				33F20DEA257806FE00EE4188 /* Model */,
+				33F20DE5257805CF00EE4188 /* ViewModels */,
 				D2CA309B2575BE6600FA5816 /* Models */,
 				D2CA30972575BD8100FA5816 /* Views */,
 				3312FD1625744172002ECA72 /* SceneDelegate.swift */,
@@ -330,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F20DEC2578071700EE4188 /* LeaderboardUser.swift in Sources */,
 				3312FD1725744172002ECA72 /* SceneDelegate.swift in Sources */,
 				D257CD792577566F0014D481 /* UIColor.swift in Sources */,
 				33EDFB81257550CA00ED760F /* LogInView.swift in Sources */,
@@ -339,6 +362,7 @@
 				D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */,
 				D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */,
 				3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */,
+				33F20DE7257805E200EE4188 /* LeaderboardUserViewModel.swift in Sources */,
 				D2FF87D025603CD1007B1CDA /* Leaderboard.swift in Sources */,
 				3312FD1425742740002ECA72 /* SessionStore.swift in Sources */,
 				D295D3D9257443B10049FB16 /* UserProfile.swift in Sources */,
