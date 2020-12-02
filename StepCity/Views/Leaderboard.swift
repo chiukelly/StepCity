@@ -58,7 +58,9 @@ struct Leaderboard: View {
                                     .font(.custom("Roboto-Light", size: gr.size.height * 0.18))
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             }
+                            .buttonStyle(PlainButtonStyle())
                         }
+                        
                         
                         NavigationLink(destination: AddFriends()) {
                             ZStack {
@@ -70,6 +72,7 @@ struct Leaderboard: View {
                                 
                                 Text("Add Friends")
                                     .font(.custom("Roboto-Light", size: gr.size.height * 0.18))
+                                
                             }
                         }
                     }
@@ -162,7 +165,7 @@ struct AddFriends: View {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .frame(width: gr.size.height * 0.04, height: gr.size.height * 0.04)
-                            .foregroundColor(.gray)
+                            .foregroundColor(Color(#colorLiteral(red: 0.7686274647712708, green: 0.7686274647712708, blue: 0.7686274647712708, alpha: 1)))
                         
                         Text("@usernameeeeee")
                             .font(.custom("Roboto Light", size: gr.size.height * 0.03))
@@ -178,7 +181,7 @@ struct AddFriends: View {
                             .frame(width: gr.size.height * 0.04, height: gr.size.height * 0.04)
                             .foregroundColor(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
                     } .padding(.horizontal, 10.0)
-                } .frame(width: gr.size.width * 0.9, height: gr.size.height * 0.05)
+                } .frame(width: gr.size.width * 0.9, height: gr.size.height * 0.07)
             }
         }
         // This hides the navigation space when you enter into this view

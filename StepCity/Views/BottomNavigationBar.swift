@@ -9,26 +9,26 @@ import SwiftUI
 
 struct BottomNavigationBar: View {
     init() {
-        UITabBar.appearance().backgroundColor = UIColor.clear
+        UITabBar.appearance().backgroundColor = UIColor(hex: "#DFE3F2")
     }
 
     var body: some View {
         TabView() {
             Text("My City")
                 .tabItem {
-                    Image("mycity_logo")
+                    Image("building")
                 }
-            Text("Build Page")
+            BuildView()
                 .tabItem {
-                    Image(systemName: "hammer")
+                    Image("hammer")
                 }
             Leaderboard()
                 .tabItem {
-                    Image(systemName: "person.2")
+                    Image("friends")
                 }
             UserProfile()
                 .tabItem {
-                    Image(systemName: "gearshape")
+                    Image("setting")
                 }
         }
     }
