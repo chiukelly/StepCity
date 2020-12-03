@@ -14,7 +14,7 @@ struct BottomNavigationBar: View {
 
     var body: some View {
         TabView() {
-            Text("My City")
+            MyCityView()
                 .tabItem {
                     Image("building")
                 }

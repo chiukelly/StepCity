@@ -28,10 +28,14 @@ struct Leaderboard: View {
                     
                     // List of friends ranked in based on most # of steps
                     // Currently static data
-                    ForEach(numbers, id:\.self) { number in
-                        friendTemplate(number)
-                            .padding(.horizontal, 30.0)
-                            .frame(width: gr.size.width, height: gr.size.height * 0.1)
+                    ScrollView() {
+                        VStack(spacing: 20.0) {
+                            ForEach(numbers, id:\.self) { number in
+                                friendTemplate(number)
+                                    .padding(.horizontal, 30.0)
+                                    .frame(width: gr.size.width, height: gr.size.height * 0.09)
+                            }
+                        }
                     }
                 }
             }
@@ -106,8 +110,8 @@ struct Leaderboard: View {
                         // Divider
                         Rectangle()
                             .frame(width: gr.size.width * 0.003)
-                            .foregroundColor(Color("mainColor"))
-                            .opacity(0.6)
+                            .foregroundColor(Color(hex: "#2B3AD7"))
+                            .opacity(0.5)
                             .offset(x: -(gr.size.width * 0.018))
                         
                         Circle()

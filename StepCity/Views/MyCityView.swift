@@ -28,9 +28,10 @@ struct MyCityView: View {
                         }
                         .frame(width: gr.size.width * 0.4, height: gr.size.height * 0.048)
                         
-                        Image(systemName: "questionmark.circle")
-                            .foregroundColor(Color(hex: "#CACDF5"))
-                        
+                        Button(action: {}) {
+                            Image(systemName: "questionmark.circle")
+                                .foregroundColor(Color(hex: "#CACDF5"))
+                        }
                     } .frame(width: gr.size.width, alignment: .center)
                     
                     
