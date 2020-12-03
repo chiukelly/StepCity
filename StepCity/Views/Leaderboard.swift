@@ -144,6 +144,7 @@ struct AddFriends: View {
                 header()
                     .frame(height: gr.size.height * 0.12)
                 
+                // find friends
                 ZStack {
                     RoundedRectangle(cornerRadius: 5)
                     .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)))
@@ -159,7 +160,8 @@ struct AddFriends: View {
                         
                         Spacer()
                     } .padding(.leading)
-                } .frame(width: gr.size.width * 0.9, height: gr.size.height * 0.05)
+                }
+                    .frame(width: gr.size.width * 0.9, height: gr.size.height * 0.05)
                 
                 Text("Requests")
                     .font(.custom("Roboto Mono Regular", size: gr.size.height * 0.03))
@@ -186,10 +188,12 @@ struct AddFriends: View {
                         
                         Image(systemName: "multiply.circle")
                             .resizable()
+                            .font(.system(size: gr.size.height * 0.1, weight: .thin))
                             .frame(width: gr.size.height * 0.04, height: gr.size.height * 0.04)
                         
                         Image(systemName: "checkmark.circle.fill")
                             .resizable()
+                            .font(.system(size: gr.size.height * 0.1, weight: .thin))
                             .frame(width: gr.size.height * 0.04, height: gr.size.height * 0.04)
                             .foregroundColor(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
                     } .padding(.horizontal, 10.0)
