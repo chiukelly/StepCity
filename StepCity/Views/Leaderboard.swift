@@ -17,9 +17,9 @@ struct Leaderboard: View {
     
     var body: some View {
         let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        let names = ["Emmanuel Ihim", "Will Dang", "Kelly  Chiu", "Anoushka Singhania", "Audrey Hsien", "Brinda Prasad", "Courtnie Stone", "Karim Hooda", "Priya Barve", "Yash Kakodkar"]
+        let names = ["Emmanuel Ihim", "Will Dang", "Anoushka Singhania", "Audrey Hsien", "Kelly  Chiu", "Brinda Prasad", "Courtnie Stone", "Karim Hooda", "Priya Barve", "Yash Kakodkar"]
         let steps = [100000, 65500, 38000, 24500, 21000, 17500, 14000, 10500, 7000, 3500]
-        let images = ["emmanuel", "will", "kelly", "anoushka", "audrey", "brinda", "courtnie", "karim", "priya", "yash"]
+        let images = ["emmanuel", "will", "anoushka", "audrey", "kelly",  "brinda", "courtnie", "karim", "priya", "yash"]
         
         // Parent Navigation view to allow navigation to Add Friends Page
         NavigationView {
