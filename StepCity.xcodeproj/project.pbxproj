@@ -38,6 +38,8 @@
 		D2AFFC1E255DC09E00E7529F /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2AFFC10255DC09E00E7529F /* RobotoMono-Regular.ttf */; };
 		D2AFFC1F255DC09E00E7529F /* RobotoMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2AFFC11255DC09E00E7529F /* RobotoMono-Light.ttf */; };
 		D2AFFC20255DC09E00E7529F /* RobotoMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2AFFC12255DC09E00E7529F /* RobotoMono-BoldItalic.ttf */; };
+		D2D59EC12578853A00F763CC /* GoalComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D59EC02578853A00F763CC /* GoalComplete.swift */; };
+		D2D59EC4257889F800F763CC /* MyCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D59EC3257889F800F763CC /* MyCityView.swift */; };
 		D2FF87D025603CD1007B1CDA /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */; };
 		D2FF87D325603CE3007B1CDA /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
@@ -79,6 +81,8 @@
 		D2AFFC10255DC09E00E7529F /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		D2AFFC11255DC09E00E7529F /* RobotoMono-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Light.ttf"; sourceTree = "<group>"; };
 		D2AFFC12255DC09E00E7529F /* RobotoMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D2D59EC02578853A00F763CC /* GoalComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalComplete.swift; sourceTree = "<group>"; };
+		D2D59EC3257889F800F763CC /* MyCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				33EDFB80257550CA00ED760F /* LogInView.swift */,
+				D2D59EC3257889F800F763CC /* MyCityView.swift */,
+				D2D59EC02578853A00F763CC /* GoalComplete.swift */,
 				D295D3D8257443B10049FB16 /* UserProfile.swift */,
 				D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */,
 				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
@@ -354,8 +360,10 @@
 			files = (
 				33F20DEC2578071700EE4188 /* LeaderboardUser.swift in Sources */,
 				3312FD1725744172002ECA72 /* SceneDelegate.swift in Sources */,
+				D2D59EC12578853A00F763CC /* GoalComplete.swift in Sources */,
 				D257CD792577566F0014D481 /* UIColor.swift in Sources */,
 				33EDFB81257550CA00ED760F /* LogInView.swift in Sources */,
+				D2D59EC4257889F800F763CC /* MyCityView.swift in Sources */,
 				D257CD6E25772E950014D481 /* Color.swift in Sources */,
 				D2FF87D325603CE3007B1CDA /* (null) in Sources */,
 				D257CD6025772ACD0014D481 /* BuildView.swift in Sources */,

@@ -5,24 +5,24 @@
 //  Created by Kelly Chiu on 12/2/20.
 //
 
-import Foundation
-import FirebaseFirestore
-import FirebaseFirestoreSwift
-
-class LeaderboardUserViewModel: ObservableObject {
-    @Published var leaderboardUserList = [LeaderboardUser]()
-    
-    private var db = Firestore.firestore()
-    
-    func fetchData() {
-        db.collection("userFriends").addSnapshotListener { (querySnapshot, error) in
-            guard let documents = querySnapshot?.documents else {
-                print("No documents")
-                return
-            }
-            
-                self.leaderboardUserList = documents.map { (queryDocumentSnapshot) -> LeaderboardUser in
-                return try? queryDocumentSnapshot.data(as: LeaderboardUser.self)
+//import Foundation
+//import FirebaseFirestore
+//import FirebaseFirestoreSwift
+//
+//class LeaderboardUserViewModel: ObservableObject {
+//    @Published var leaderboardUserList = [LeaderboardUser]()
+//    
+//    private var db = Firestore.firestore()
+//    
+//    func fetchData() {
+//        db.collection("userFriends").addSnapshotListener { (querySnapshot, error) in
+//            guard let documents = querySnapshot?.documents else {
+//                print("No documents")
+//                return
+//            }
+//            
+//                self.leaderboardUserList = documents.map { (queryDocumentSnapshot) -> LeaderboardUser in
+//                return try? queryDocumentSnapshot.data(as: LeaderboardUser.self)
                     
 //                let data = queryDocumentSnapshot.data()
 //
@@ -31,7 +31,7 @@ class LeaderboardUserViewModel: ObservableObject {
 //                // let profilePic =
 //
 //                return LeaderboardUser(username: username, steps: steps)
-            }
-        }
-    }
-}
+//            }
+//        }
+//    }
+//}

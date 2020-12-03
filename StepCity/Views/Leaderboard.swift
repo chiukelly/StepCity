@@ -11,7 +11,7 @@ struct Leaderboard: View {
     @Environment(\.presentationMode) var presentationMode
     
     // database leaderboard list 
-    @ObservedObject private var viewModel = LeaderboardUserViewModel()
+//    @ObservedObject private var viewModel = LeaderboardUserViewModel()
     
     // use viewModel.leaderboardUserList
     
@@ -38,7 +38,7 @@ struct Leaderboard: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .onAppear() {
-                self.viewModel.fetchData()
+//                self.viewModel.fetchData()
             }
         }
     }
