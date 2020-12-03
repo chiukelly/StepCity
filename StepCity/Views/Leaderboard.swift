@@ -16,7 +16,10 @@ struct Leaderboard: View {
     // use viewModel.leaderboardUserList
     
     var body: some View {
-        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        let names = ["Emmanuel Ihim", "Will Dang", "Kelly  Chiu", "Anoushka Singhania", "Audrey Hsien", "Brinda Prasad", "Courtnie Stone", "Karim Hooda", "Priya Barve", "Yash Kakodkar"]
+        let steps = [100000, 65500, 38000, 24500, 21000, 17500, 14000, 10500, 7000, 3500]
+        let images = ["emmanuel", "will", "kelly", "anoushka", "audrey", "brinda", "courtnie", "karim", "priya", "yash"]
         
         // Parent Navigation view to allow navigation to Add Friends Page
         NavigationView {
@@ -30,8 +33,8 @@ struct Leaderboard: View {
                     // Currently static data
                     ScrollView() {
                         VStack(spacing: 20.0) {
-                            ForEach(numbers, id:\.self) { number in
-                                friendTemplate(number)
+                            ForEach(0..<10, id: \.self) { i in
+                                friendTemplate(numbers[i], names[i], steps[i], images[i])
                                     .padding(.horizontal, 30.0)
                                     .frame(width: gr.size.width, height: gr.size.height * 0.09)
                             }
@@ -94,44 +97,46 @@ struct Leaderboard: View {
     
     // Design for friend block
     // Static data
-    func friendTemplate(_ number: Int) -> some View {
+    func friendTemplate(_ number: Int, _ name: String, _ step: Int, _ image: String) -> some View {
         return
             GeometryReader { gr in
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .strokeBorder(Color(#colorLiteral(red: 0.08805567026138306, green: 0.16572041809558868, blue: 0.9786110520362854, alpha: 0.4000000059604645)), lineWidth: 1)
-                    
+
                     HStack(spacing: 5.0) {
-                        Text("\(number)")
+                        Text(String(number))
                             .font(.custom("Roboto-Light", size: gr.size.height * 0.6))
                             .frame(width: gr.size.width * 0.15)
                             .multilineTextAlignment(.center)
-                        
+
                         // Divider
                         Rectangle()
                             .frame(width: gr.size.width * 0.003)
                             .foregroundColor(Color(hex: "#2B3AD7"))
                             .opacity(0.5)
                             .offset(x: -(gr.size.width * 0.018))
-                        
-                        Circle()
-                            .fill(Color(#colorLiteral(red: 0.7686274647712708, green: 0.7686274647712708, blue: 0.7686274647712708, alpha: 1)))
+
+                        // image
+                        Image(image)
+                            .resizable()
+                            .clipShape(Circle())
                             .frame(width: gr.size.height * 0.6, height: gr.size.height * 0.6)
-                        
+
                         // Go to friend's city
                         NavigationLink(destination: FriendCityView()) {
-                            Text("@userfriend")
+                            Text(name)
                                 .font(.custom("Roboto-Light", size: gr.size.height * 0.25))
                                 .foregroundColor(.black)
                         }
-                        
+
 //                        Text("@userfriend")
 //                            .font(.custom("Roboto-Light", size: gr.size.height * 0.25))
 //
                         Spacer()
                     }
-                    
-                    Text("25,000 steps")
+
+                    Text("\(step) steps")
                         .font(.custom("RobotoMono-Regular", size: gr.size.height * 0.16))
                         .foregroundColor(Color(#colorLiteral(red: 0.17, green: 0.23, blue: 0.84, alpha: 0.6)))
                         //.frame(width: 100.0, height: 150.0)
