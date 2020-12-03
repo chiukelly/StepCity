@@ -16,7 +16,7 @@ struct Leaderboard: View {
     // use viewModel.leaderboardUserList
     
     var body: some View {
-        let numbers = [1, 2, 3, 4, 5, 6]
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
         
         // Parent Navigation view to allow navigation to Add Friends Page
         NavigationView {
@@ -118,9 +118,16 @@ struct Leaderboard: View {
                             .fill(Color(#colorLiteral(red: 0.7686274647712708, green: 0.7686274647712708, blue: 0.7686274647712708, alpha: 1)))
                             .frame(width: gr.size.height * 0.6, height: gr.size.height * 0.6)
                         
-                        Text("@userfriend")
-                            .font(.custom("Roboto-Light", size: gr.size.height * 0.25))
+                        // Go to friend's city
+                        NavigationLink(destination: FriendCityView()) {
+                            Text("@userfriend")
+                                .font(.custom("Roboto-Light", size: gr.size.height * 0.25))
+                                .foregroundColor(.black)
+                        }
                         
+//                        Text("@userfriend")
+//                            .font(.custom("Roboto-Light", size: gr.size.height * 0.25))
+//
                         Spacer()
                     }
                     
@@ -133,6 +140,8 @@ struct Leaderboard: View {
             }
     }
 }
+
+
 
 // Add Friends Page
 struct AddFriends: View {

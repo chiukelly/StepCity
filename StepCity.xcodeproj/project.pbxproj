@@ -10,6 +10,7 @@
 		3312FD1425742740002ECA72 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1325742740002ECA72 /* SessionStore.swift */; };
 		3312FD1725744172002ECA72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD1625744172002ECA72 /* SceneDelegate.swift */; };
 		3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312FD19257443F3002ECA72 /* ContentView.swift */; };
+		331AA18425795FA900EED917 /* FriendCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331AA18325795FA900EED917 /* FriendCityView.swift */; };
 		3321FEB525749F1400FAB1EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */; };
 		33995286256310FB00CA10B6 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */; };
 		33EDFB81257550CA00ED760F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EDFB80257550CA00ED760F /* LogInView.swift */; };
@@ -49,6 +50,7 @@
 		3312FD1325742740002ECA72 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		3312FD1625744172002ECA72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3312FD19257443F3002ECA72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		331AA18325795FA900EED917 /* FriendCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCityView.swift; sourceTree = "<group>"; };
 		3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
 		33EDFB80257550CA00ED760F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				D2AFFBEA255C3D6000E7529F /* Leaderboard.swift */,
 				D2AFFBE72558E00D00E7529F /* BottomNavigationBar.swift */,
 				D257CD5F25772ACD0014D481 /* BuildView.swift */,
+				331AA18325795FA900EED917 /* FriendCityView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				D257CD6E25772E950014D481 /* Color.swift in Sources */,
 				D2FF87D325603CE3007B1CDA /* (null) in Sources */,
 				D257CD6025772ACD0014D481 /* BuildView.swift in Sources */,
+				331AA18425795FA900EED917 /* FriendCityView.swift in Sources */,
 				D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */,
 				D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */,
 				3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */,
