@@ -16,7 +16,7 @@ struct StepCityApp: App {
     
     var body: some Scene {
         WindowGroup {
-            
+            MyCityView()
         }
     }
 }

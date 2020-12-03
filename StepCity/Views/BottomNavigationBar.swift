@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BottomNavigationBar: View {
     init() {
-        UITabBar.appearance().backgroundColor = UIColor(hex: "#DFE3F2")
+        UITabBar.appearance().backgroundColor = UIColor.white
     }
 
     var body: some View {
