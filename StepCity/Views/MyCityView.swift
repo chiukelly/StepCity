@@ -39,7 +39,8 @@ struct MyCityView: View {
                     // city playform
                     Image("my_city_platform")
                         .resizable()
-                        .shadow(radius: 15)
+                        .shadow(color: Color(hex: "#2B3AD7"), radius: 15, x: 0, y: 4)
+                        .opacity(0.31)
                         .frame(height: gr.size.height * 0.6)
                 }
                 .padding(.vertical, 50.0)
