@@ -13,6 +13,7 @@
 		331AA18425795FA900EED917 /* FriendCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331AA18325795FA900EED917 /* FriendCityView.swift */; };
 		3321FEB525749F1400FAB1EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */; };
 		33995286256310FB00CA10B6 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */; };
+		33E659302579E6390079C20F /* TesterUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6592F2579E6390079C20F /* TesterUIView.swift */; };
 		33EDFB81257550CA00ED760F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EDFB80257550CA00ED760F /* LogInView.swift */; };
 		33F20DE7257805E200EE4188 /* LeaderboardUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F20DE6257805E200EE4188 /* LeaderboardUserViewModel.swift */; };
 		33F20DEC2578071700EE4188 /* LeaderboardUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F20DEB2578071700EE4188 /* LeaderboardUser.swift */; };
@@ -53,6 +54,7 @@
 		331AA18325795FA900EED917 /* FriendCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCityView.swift; sourceTree = "<group>"; };
 		3321FEB425749F1400FAB1EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33995285256310FB00CA10B6 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
+		33E6592F2579E6390079C20F /* TesterUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterUIView.swift; sourceTree = "<group>"; };
 		33EDFB80257550CA00ED760F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		33F20DE6257805E200EE4188 /* LeaderboardUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardUserViewModel.swift; sourceTree = "<group>"; };
 		33F20DEB2578071700EE4188 /* LeaderboardUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardUser.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				D28DEFA525573CAA00B4A524 /* Preview Content */,
 				D257CD6D25772E950014D481 /* Color.swift */,
 				D257CD782577566F0014D481 /* UIColor.swift */,
+				33E6592F2579E6390079C20F /* TesterUIView.swift */,
 			);
 			path = StepCity;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				D257CD6025772ACD0014D481 /* BuildView.swift in Sources */,
 				331AA18425795FA900EED917 /* FriendCityView.swift in Sources */,
 				D2AFFBE82558E00D00E7529F /* BottomNavigationBar.swift in Sources */,
+				33E659302579E6390079C20F /* TesterUIView.swift in Sources */,
 				D28DEFA025573CA900B4A524 /* StepCityApp.swift in Sources */,
 				3312FD1A257443F3002ECA72 /* ContentView.swift in Sources */,
 				33F20DE7257805E200EE4188 /* LeaderboardUserViewModel.swift in Sources */,

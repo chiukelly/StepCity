@@ -85,8 +85,20 @@ struct Leaderboard: View {
                                 Rectangle()
                                     .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
                                 
-                                Text("Add Friends")
-                                    .font(.custom("Roboto-Light", size: gr.size.height * 0.18))
+                                HStack {
+                                    Text("Add Friends").font(.custom("Roboto-Light", size: gr.size.height * 0.018))
+                                        .foregroundColor(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
+
+                                    ZStack {
+                                        Circle()
+                                            .fill(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
+                                            .frame(width: gr.size.width * 0.06)
+                                        
+                                        Text("1").font(.custom("Roboto-Light", size: gr.size.height * 0.018))
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    }.offset(x: 30)
+
+                                }
                                 
                             }
                         }
@@ -252,8 +264,12 @@ struct AddFriends: View {
                                 Rectangle()
                                 .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
                                 
-                                Text("Add Friends").font(.custom("Roboto-Light", size: gr.size.height * 0.18))
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                HStack {
+                                    Text("Add Friends").font(.custom("Roboto-Light", size: gr.size.height * 0.18))
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                
+                                }
+                                
                             }
                         })
                     }

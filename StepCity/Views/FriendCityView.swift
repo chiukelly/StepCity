@@ -25,7 +25,7 @@ struct FriendCityView: View {
                             .strokeBorder(Color(#colorLiteral(red: 0.37254905700683594, green: 0.42353007197380066, blue: 0.8901960849761963, alpha: 0.4000000059604645)), lineWidth: 1)
                             
                             //enter password
-                            Text("@emmanuel's city").font(.custom("Roboto Light", size: 13)).foregroundColor(Color(#colorLiteral(red: 0.17, green: 0.23, blue: 0.84, alpha: 1))).multilineTextAlignment(.center)
+                            Text("Emmanuel Ihim's city").font(.custom("Roboto Light", size: 13)).foregroundColor(Color(#colorLiteral(red: 0.17, green: 0.23, blue: 0.84, alpha: 1))).multilineTextAlignment(.center)
                         }
                         .frame(width: gr.size.width * 0.4, height: gr.size.height * 0.048)
                         
@@ -47,12 +47,12 @@ struct FriendCityView: View {
                 }
                 .padding(.vertical, 50.0)
                 
-                if !empty {
-                    Image("friend_building")
-                        .resizable()
-//                        .frame(width: gr.size.width, height: gr.size.height)
-//                        .offset(x: 13, y: gr.size.height * 0.18)
-                }
+//                if !empty {
+//                    Image("friend_building")
+//                        .resizable()
+////                        .frame(width: gr.size.width, height: gr.size.height)
+////                        .offset(x: 13, y: gr.size.height * 0.18)
+//                }
             }
         }
     }
