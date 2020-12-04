@@ -33,6 +33,7 @@ struct SignInView : View {
     var body: some View {
         GeometryReader { gr in
             VStack {
+                Spacer()
                 VStack (spacing: 18.0){
                     // App name
                     LinearGradient(gradient: Gradient(colors: [.black, Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1))]),
@@ -40,11 +41,11 @@ struct SignInView : View {
                         .mask(Text("STEPCITY"))
                         .padding(.bottom)
                         .font(Font.custom("PixelOperator-Bold", size: gr.size.height * 0.10))
-                        .frame(height: gr.size.height * 0.10)
+                        .frame(height: gr.size.height * 0.185)
 
                     CustomTextField(placeholder: Text("enter email")
                                         .font(.custom("Roboto Light", size: gr.size.height * 0.025)), text: $email)
-                    CustomTextField(placeholder: Text("enter password")
+                    CustomTextFieldPassword(placeholder: Text("enter password")
                                         .font(.custom("Roboto Light", size: gr.size.height * 0.025)), text: $password)
 
                     // login button
@@ -82,13 +83,13 @@ struct SignInView : View {
                     .padding(.horizontal, 30.0)
                 
                 VStack() {
-                    Image("main_buildings")
+                    Image("building_test")
                         .resizable()
                         .scaledToFill()
                         .ignoresSafeArea()
-                        .offset(x: -(gr.size.width * 0.1))
+                        .offset(x: -(gr.size.width * 0.0001))
                 }
-                .frame(width: gr.size.width, height: gr.size.height * 0.5)
+                .frame(width: gr.size.width, height: gr.size.height * 0.40)
             }
         }
     }
@@ -109,6 +110,30 @@ struct CustomTextField: View {
                     .offset(x: 20)
             }
             TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
+                .padding(20)
+                .cornerRadius(40.0)
+                .overlay(RoundedRectangle(cornerRadius: 27)
+                            .strokeBorder(Color(#colorLiteral(red: 0.37254905700683594, green: 0.42353007197380066, blue: 0.8901960849761963, alpha: 0.4000000059604645)), lineWidth: 1))
+                .foregroundColor(Color("mainColor"))
+                .autocapitalization(.none)
+        }
+    }
+}
+
+struct CustomTextFieldPassword: View {
+    var placeholder: Text
+    @Binding var text: String
+    var editingChanged: (Bool)->() = { _ in }
+    var commit: ()->() = { }
+
+    var body: some View {
+        ZStack(alignment: .leading) {
+            if text.isEmpty {
+                placeholder
+                    .foregroundColor(Color("mainColor"))
+                    .offset(x: 20)
+            }
+            SecureField("", text: $text)
                 .padding(20)
                 .cornerRadius(40.0)
                 .overlay(RoundedRectangle(cornerRadius: 27)

@@ -34,9 +34,9 @@ struct TesterUIView: View {
                                 ZStack {
                                     Rectangle()
                                         .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-
+                                    
                                     Rectangle()
-                                    .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
+                                        .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
                                     
                                     HStack {
                                         Text("Add Friends").font(.custom("Roboto-Light", size: gr.size.height * 0.018))

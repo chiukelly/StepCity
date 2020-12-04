@@ -16,8 +16,9 @@ struct StepCityApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Leaderboard()
+            //Leaderboard()
             //BottomNavigationBar()
+            SignInView()
         }
     }
 }

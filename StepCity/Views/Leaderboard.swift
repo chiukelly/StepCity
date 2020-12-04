@@ -17,7 +17,7 @@ struct Leaderboard: View {
     
     var body: some View {
         let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        let names = ["Emmanuel Ihim", "Will Dang", "Anoushka Singhania", "Audrey Hsien", "Kelly  Chiu", "Brinda Prasad", "Courtnie Stone", "Karim Hooda", "Priya Barve", "Yash Kakodkar"]
+        let names = ["Emmanuel Ihim", "Will Dang", "Anoushka Singhania", "Audrey Hsien", "Kelly Chiu", "Brinda Prasad", "Courtnie Stone", "Karim Hooda", "Priya Barve", "Yash Kakodkar"]
         let steps = [100000, 65500, 38000, 24500, 21000, 17500, 14000, 10500, 7000, 3500]
         let images = ["emmanuel", "will", "anoushka", "audrey", "kelly",  "brinda", "courtnie", "karim", "priya", "yash"]
         
@@ -86,15 +86,15 @@ struct Leaderboard: View {
                                     .strokeBorder(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)), lineWidth: 0.5)
                                 
                                 HStack {
-                                    Text("Add Friends").font(.custom("Roboto-Light", size: gr.size.height * 0.018))
+                                    Text("   Add Friends").font(.custom("Roboto-Light", size: gr.size.height * 0.18))
                                         .foregroundColor(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
 
                                     ZStack {
                                         Circle()
                                             .fill(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
                                             .frame(width: gr.size.width * 0.06)
-                                        
-                                        Text("1").font(.custom("Roboto-Light", size: gr.size.height * 0.018))
+
+                                        Text("1").font(.custom("Roboto-Light", size: gr.size.height * 0.18))
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     }.offset(x: 30)
 
@@ -207,7 +207,7 @@ struct AddFriends: View {
                             .frame(width: gr.size.height * 0.04, height: gr.size.height * 0.04)
                             .foregroundColor(Color(#colorLiteral(red: 0.7686274647712708, green: 0.7686274647712708, blue: 0.7686274647712708, alpha: 1)))
                         
-                        Text("@usernameeeeee")
+                        Text("@happydemoday")
                             .font(.custom("Roboto Light", size: gr.size.height * 0.03))
                         
                         Spacer()
