@@ -26,7 +26,7 @@ struct GoalComplete: View {
                     .foregroundColor(Color(#colorLiteral(red: 0.17, green: 0.23, blue: 0.84, alpha: 1)))
                 
                 //Congratulations!
-                Text("Congratulations! \nYou walked 10000 steps today.")
+                Text("Congratulations! \nYou walked 21000 steps today.")
                     .font(.custom("Roboto Light", size: gr.size.height * 0.032))
                     .frame(height: gr.size.height * 0.08)
                     .multilineTextAlignment(.center)

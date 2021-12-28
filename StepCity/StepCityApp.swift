@@ -18,7 +18,8 @@ struct StepCityApp: App {
         WindowGroup {
             //Leaderboard()
             //BottomNavigationBar()
-            SignInView()
+            //SignInView()
+            GoalComplete()
         }
     }
 }

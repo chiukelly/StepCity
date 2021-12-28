@@ -12,12 +12,14 @@ struct UserProfile: View {
         
         GeometryReader { gr in
             VStack{
-                Circle()
-                    .fill(Color(#colorLiteral(red: 0.7686274647712708, green: 0.7686274647712708, blue: 0.7686274647712708, alpha: 1)))
+                //Circle()
+                Image("kelly")
+                    .resizable()
+                    .clipShape(Circle())
                     .frame(width: gr.size.height * 0.2, height: gr.size.height * 0.2)
                     .padding(.top)
                 
-                Text("@myusername")
+                Text("stepcitykelly")
                     .font(.custom("Roboto Light", size: gr.size.height * 0.037))
                 
                 // Edit Profile Button
@@ -36,13 +38,13 @@ struct UserProfile: View {
                 Divider()
                     .padding([.top, .leading, .trailing])
                 
-                dataTemplate("Date Joined", "March 29, 2020")
+                dataTemplate("Date Joined", "December 4, 2020")
                     .frame(width: gr.size.width, height: gr.size.height * 0.08)
-                dataTemplate("Lifetime Record", "1,282,429 Steps")
+                dataTemplate("Lifetime Record", "0 Steps")
                     .frame(width: gr.size.width, height: gr.size.height * 0.08)
-                dataTemplate("All-Time Weekly High", "12,420 Steps")
+                dataTemplate("All-Time Weekly High", "0 Steps")
                     .frame(width: gr.size.width, height: gr.size.height * 0.08)
-                dataTemplate("Weekly High Score", "2420 Steps")
+                dataTemplate("Weekly High Score", "0 Steps")
                     .frame(width: gr.size.width, height: gr.size.height * 0.08)
                 dataTemplate("Tracker", "Apple Health")
                     .frame(width: gr.size.width, height: gr.size.height * 0.08)

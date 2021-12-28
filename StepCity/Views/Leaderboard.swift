@@ -137,9 +137,18 @@ struct Leaderboard: View {
 
                         // Go to friend's city
                         NavigationLink(destination: FriendCityView()) {
-                            Text(name)
-                                .font(.custom("Roboto-Light", size: gr.size.height * 0.25))
-                                .foregroundColor(.black)
+                            
+                            //change dummy data user to blue
+                            if(name == "Kelly Chiu") {
+                                Text(name)
+                                    .font(.custom("Roboto-Light", size: gr.size.height * 0.25))
+                                    .foregroundColor(Color(#colorLiteral(red: 0.16862745583057404, green: 0.22745098173618317, blue: 0.843137264251709, alpha: 1)))
+                            }
+                            else {
+                                Text(name)
+                                    .font(.custom("Roboto-Light", size: gr.size.height * 0.25))
+                                    .foregroundColor(.black)
+                            }
                         }
 
 //                        Text("@userfriend")
